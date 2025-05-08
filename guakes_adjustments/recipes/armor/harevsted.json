@@ -80,6 +80,55 @@
     ]
   },
   {
+    "result": "wyvern_skull_helmet_advanced",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [ [ "survival", 2 ], [ "fabrication", 5 ] ],
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 1 ], [ "sewing_aramids", 30 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "CUT_FINE", "level": 2 },
+      { "id": "FABRIC_CUT", "level": 2 },
+      { "id": "DRILL", "level": 3 },
+      { "id": "GRIND", "level": 1 },
+      { "id": "LEATHER_AWL", "level": 2 },
+      { "id": "OVEN", "level": 1 }
+    ],
+    "tools": [
+      [ [ "surface_heat", 20, "LIST" ] ]
+    ],
+    "components": [
+      [ [ "wyvern_skull_helmet", 1 ] ],
+      [
+        [ "mask_gas", 1 ],
+        [ "mask_bunker", 1 ],
+        [ "mask_gas_half", 1 ],
+        [ "mask_gas_xs", 1 ],
+        [ "mask_gas_xl", 1 ]
+      ],
+      [
+        [ "polycarbonate_chunk", 4 ],
+        [ "glasses_bal", 2 ]
+      ],
+      [ [ "wax_any", 1, "LIST" ], [ "any_tallow", 4, "LIST" ] ]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_plasticworking" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_tanning_basic" },
+      { "proficiency": "prof_tanning" },
+      { "proficiency": "prof_millinery" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_leatherworking_basic" }
+    ]
+  },
+  {
     "result": "poncho_wyvern",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
