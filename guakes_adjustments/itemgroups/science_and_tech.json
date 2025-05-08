@@ -1,0 +1,64 @@
+[
+    {
+      "type": "item_group",
+      "id": "chem_lab",
+      "copy-from": "chem_lab",
+      "extend": { "items": [ [ "recipe_wyvern", 1 ] ] }
+    },
+    {
+      "type": "item_group",
+      "id": "mut_lab",
+      "copy-from": "mut_lab",
+      "extend": { "items": [ [ "recipe_wyvern", 1 ] ] }
+    },
+    {
+      "type": "item_group",
+      "id": "mutagen_kits",
+      "copy-from": "mutagen_kits",
+      "extend": {
+        "items": [
+            { "group": "mutagenic_field_kit_wyvern", "prob": 1 },
+            { "group": "mutagen_primer_kit_wyvern", "prob": 2 },
+            { "group": "mutagen_kit_wyvern", "prob": 2 }
+        ]
+      }
+    },
+    {
+      "type": "item_group",
+      "id": "mutagenic_field_kit_wyvern",
+      "container-item": "box_small_plastic",
+      "subtype": "collection",
+      "items": [
+        { "item": "iv_mutagen_wyvern", "prob": 100 },
+        { "item": "iv_mutagen", "prob": 100, "count": 1 },
+        { "item": "syringe", "prob": 100, "count": 2 },
+        { "item": "bubblewrap", "prob": 100, "count": [ 2, 5 ] },
+        { "item": "lab_file_mutagen_guide", "prob": 100 },
+        { "item": "lab_file_mutation_testing", "prob": 100 }
+      ]
+    },
+    {
+      "type": "item_group",
+      "id": "mutagen_primer_kit_wyvern",
+      "container-item": "box_small_plastic",
+      "subtype": "collection",
+      "items": [
+        { "item": "iv_mutagen_wyvern", "prob": 100, "count": [ 4, 5 ] },
+        { "item": "bubblewrap", "prob": 100, "count": [ 2, 5 ] },
+        { "item": "lab_file_mutagen_guide", "prob": 100 },
+        { "item": "lab_file_mutation_testing", "prob": 100 }
+      ]
+    },
+    {
+      "type": "item_group",
+      "id": "mutagen_kit_wyvern",
+      "container-item": "box_small_plastic",
+      "subtype": "collection",
+      "items": [
+        { "item": "mutagen_wyvern", "count": [ 7, 11 ], "prob": 100 },
+        { "item": "bubblewrap", "prob": 100, "count": [ 2, 5 ] },
+        { "item": "lab_file_mutagen_guide", "prob": 100 },
+        { "item": "lab_file_mutation_testing", "prob": 100 }
+      ]
+    }
+]

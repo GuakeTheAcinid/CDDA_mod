@@ -1,0 +1,32 @@
+[
+    {
+      "id": "iv_mutagen_wyvern",
+      "copy-from": "iv_mutagen_flavor",
+      "type": "COMESTIBLE",
+      "name": { "str_sp": "wyvern mutagenic primer" },
+      "description": "A processed mutagenic primer shimmering red and purple like a lava lamp.",
+      "price": "4 kUSD",
+      "looks_like": "iv_mutagen",
+      "color": "magenta",
+      "use_action": {
+        "type": "consume_drug",
+        "activation_message": "You inject the wyvern mutagenic primer.",
+        "tools_needed": { "syringe": -1 },
+        "vitamins": [ [ "mutagen_wyvern", 450, 550 ] ]
+      }
+    },
+    {
+      "id": "mutagen_wyvern",
+      "copy-from": "mutagen_flavor",
+      "type": "COMESTIBLE",
+      "name": { "str_sp": "wyvern mutagen" },
+      "description": "An extremely rare mutagen cocktail.",
+      "price": "2000 USD",
+      "looks_like": "mutagen",
+      "use_action": {
+        "type": "consume_drug",
+        "activation_message": "You drink the wyvern mutagen.",
+        "vitamins": [ [ "mutagen_wyvern", 225 ], [ "mutagen", 125 ] ]
+      }
+    }
+]

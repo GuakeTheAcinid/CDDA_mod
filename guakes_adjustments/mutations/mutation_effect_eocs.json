@@ -1,0 +1,226 @@
+[
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_fill_wyvern_plates",
+      "eoc_type": "EVENT",
+      "required_event": "character_wears_item",
+      "condition": { "compare_string": [ "integrated_wyvern_plates", { "context_val": "itype" } ] },
+      "effect": [ { "run_eoc_with": "EOC_fill_wyvern_plates_2", "alpha_talker": "avatar" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_fill_wyvern_plates_2",
+      "eoc_type": "ACTIVATION",
+      "effect": [
+          { "u_spawn_item": "wyvern_upper_plate", "count": "1" },
+          { "u_spawn_item": "wyvern_upper_plate", "count": "1" },
+          { "u_spawn_item": "wyvern_lower_plate", "count": "1" },
+          { "u_spawn_item": "wyvern_lower_plate", "count": "1" },
+          { "u_spawn_item": "wyvern_muzzle_plate", "count": "1" },
+          { "u_spawn_item": "wyvern_crown_plate", "count": "1" }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_shattered_wyvern_plates_hurt",
+      "//": "will check for shattered plates every 5 minutes",
+      "recurrence": "5 minutes",
+      "condition": {
+        "or": [
+          { "u_has_item": "shattered_wyvern_upper_plate" },
+          { "u_has_item": "shattered_wyvern_lower_plate" },
+          { "u_has_item": "shattered_wyvern_muzzle_plate" },
+          { "u_has_item": "shattered_wyvern_crown_plate" }
+        ]
+      },
+      "effect": [
+        {
+          "u_add_effect": "puncture",
+          "duration": "PERMANENT",
+          "intensity": {
+            "math": [
+              "u_item_count('shattered_wyvern_upper_plate') + u_item_count('shattered_wyvern_lower_plate') + u_item_count('shattered_wyvern_muzzle_plate') * 4 + u_item_count('shattered_wyvern_crown_plate') * 2"
+            ]
+          }
+        }
+      ],
+      "false_effect": [ { "u_lose_effect": "puncture" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wyvern_crown_better_visibility",
+      "eoc_type": "EVENT",
+      "required_event": "evolves_mutation",
+      "condition": { "compare_string": [ "WYVERN_SCALE_PLATES", { "context_val": "to_trait" } ] },
+      "effect":[ { "u_add_trait": "WYVERN_CROWN_VISIBILITY" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wyvern_wings_mutated",
+      "eoc_type": "EVENT",
+      "required_event": "evolves_mutation",
+      "condition": { "compare_string": [ "WINGS_WYVERN", { "context_val": "to_trait" } ] },
+      "effect":[
+        {
+          "u_run_inv_eocs": "all",
+          "search_data": [ { "id": "integrated_wyvern_plates" } ],
+          "true_eocs": [ "EOC_wyvern_wings_set_flag" ]
+        }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wyvern_wings_set_flag",
+      "eoc_type": "ACTIVATION",
+      "effect":[ { "npc_set_flag": "BLOCK_WHILE_WORN" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wyvern_muzzle_fill_first",
+      "eoc_type": "EVENT",
+      "required_event": "evolves_mutation",
+      "condition": { "compare_string": [ "MUZZLE_WYVERN", { "context_val": "to_trait" } ] },
+      "effect":[ 
+        {
+          "u_add_effect": "chem_gland_chem",
+          "duration": "PERMANENT",
+          "intensity": 1
+        }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_mut_spit_flame",
+      "condition": { "math": [ "u_effect_intensity('chem_gland_chem')", ">", "1" ] },
+      "effect": [
+        { "u_cast_spell": { "id":"FIRE_SPIT" }, "targeted": true }
+      ],
+      "false_effect": { "u_message": "You try to spit, but your cheeks are empty!" }
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_consume_wyvern_fire_spit",
+      "eoc_type": "EVENT",
+      "required_event": "character_casts_spell",
+      "condition": { "compare_string": [ "FIRE_SPIT", { "context_val": "spell" } ] },
+      "effect":
+      [
+        { "u_message": "You spit the flame!", "type": "good" },
+        {
+          "u_add_effect": "chem_gland_chem",
+          "duration": "PERMANENT",
+          "intensity": { "math": [ "u_effect_intensity('chem_gland_chem') - 1" ] }
+        }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_chem_gland_recharge_timer",
+      "//": "will regenerate flame for flame glands to spray ~3 charges per 2 days",
+      "recurrence": [ "17 hours", "19 hours" ],
+      "condition": {
+        "and": [
+          { "u_has_trait": "MUZZLE_WYVERN" },
+          { "not": { "u_has_effect": "chem_gland_chem", "intensity": 4 } },
+          { "math": [ "u_calories('format': 'percent')", ">", "33" ] },
+          { "math": [ "u_val('instant_thirst')", "<", "240" ] },
+          { "math": [ "u_vitamin('iron')", ">", "-3200" ] },
+          { "math": [ "u_vitamin('mutagen_wyvern')", ">", "86" ] }
+        ]
+      },
+      "effect": [
+        { "math": [ "u_calories()", "-=", "74" ] },
+        { "math": [ "u_val('thirst')", "+=", "42" ] },
+        { "math": [ "u_vitamin('vitC')", "-=", "72" ] },
+        { "math": [ "u_vitamin('iron')", "-=", "27" ] },
+        { "math": [ "u_vitamin('mutagen_wyvern')", "-=", "86" ] },
+        {
+          "u_add_effect": "chem_gland_chem",
+          "duration": "PERMANENT",
+          "intensity": { "math": [ "u_effect_intensity('chem_gland_chem') + 1" ] }
+        },
+        { "u_message": "You feel your cheeks fill a bit.", "type": "good" }
+      ],
+      "false_effect": [
+        {
+            "if": { "u_has_trait": "MUZZLE_WYVERN" },
+            "then": {
+              "if": { "math": [ "u_vitamin('iron')", "<", "-3199" ] },
+              "then": { "u_message": "You feel numbness in your mouth.", "type": "bad" },
+              "else":
+              {
+                "if": { "math": [ "u_val('instant_thirst')", ">", "239" ] },
+                "then": { "u_message": "You feel dryness in your mouth.", "type": "bad" },
+                "else":
+                {
+                  "if": { "math": [ "u_calories('format': 'percent')", "<", "34" ] },
+                  "then": { "u_message": "You feel fatigue in your mouth.", "type": "bad" },
+                  "else":
+                  {
+                    "if": { "math": [ "u_vitamin('mutagen_wyvern')", "<", "86" ] },
+                    "then": { "u_message": "You feel sore in your mouth.", "type": "bad" }
+                  }
+                }
+              }
+            }
+        }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_chem_gland_chem_cleanup",
+      "eoc_type": "EVENT",
+      "required_event": "loses_mutation",
+      "//": "will remove chem_gland_chem effect when the mutation is lost",
+      "condition": { "and": [ { "u_has_effect": "chem_gland_chem" }, { "compare_string": [ "MUZZLE_WYVERN", { "context_val": "trait" } ] } ] },
+      "effect": [ { "u_lose_effect": "chem_gland_chem" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_chem_gland_flame_recharge_timer",
+      "//": "will regenerate flame for flame glands to spray ~3 charges per 2 days",
+      "recurrence": 665,
+      "condition": {
+        "and": [
+          { "u_has_trait": "MUZZLE_WYVERN" },
+          { "math": [ "u_vitamin('mutagen_wyvern')", ">", "87" ] }
+        ]
+      },
+      "effect": { "math": [ "u_vitamin('mutagen_wyvern')", "-=", "1" ] }
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wear_wyvern_skull",
+      "eoc_type": "EVENT",
+      "required_event": "character_wears_item",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              { "compare_string": [ "wyvern_skull", { "context_val": "itype" } ] },
+              { "compare_string": [ "wyvern_skull_chiseled", { "context_val": "itype" } ] }
+            ]
+          },
+          { "u_has_trait": "THRESH_WYVERN" }
+        ]
+      },
+      "effect": [ { "message": "The skull is quite too familar…" } ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_wear_wyvern_helmet",
+      "eoc_type": "EVENT",
+      "required_event": "character_wears_item",
+      "condition": {
+        "and": [
+          {
+            "or": [
+              { "compare_string": [ "wyvern_skull_helmet", { "context_val": "itype" } ] }
+            ]
+          },
+          { "u_has_trait": "THRESH_WYVERN" }
+        ]
+      },
+      "effect": [ { "message": "The helmet is quite too familar…" } ]
+    }
+]

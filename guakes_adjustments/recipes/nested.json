@@ -1,0 +1,78 @@
+[
+  {
+    "//": "Nested recipes cannot copy-from, so this file has almost no sense. yet.",
+    "id": "nested_mutagen_wyvern",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "name": "wyvern mutagens",
+    "description": "Recipes related to synthesizing mutagenic substances of wyvern type.",
+    "skill_used": "chemistry",
+    "nested_category_data": [
+      "mutagen_wyvern",
+      "iv_mutagen_wyvern",
+      "wyvern_sample"
+    ],
+    "difficulty": 7
+  },
+  {
+    "id": "nested_storage_wyvern",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "name": "wyvern bags",
+    "description": "Recipes related to bags made out of fire-resistant and glittering mutant hide.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "wyvern_belt_notools",
+      "wyvern_duffel_bag",
+      "wyvern_pack",
+      "wyvern_rucksack",
+      "wyvern_runner_pack",
+      "wyvern_rig",
+      "wyvern_legrig",
+      "wyvern_leg_bag",
+      "wyvern_leg_small_bag",
+      "wyvern_armrig",
+      "wyvern_ankle_wallet_pouch",
+      "wyvern_pouch"
+    ],
+    "difficulty": 5
+  },
+  {
+    "id": "nested_holster_wyvern",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "name": "wyvern holsters",
+    "description": "Recipes related to holsters made out of fire-resistant and glittering mutant hide.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "wyvern_axe_ring",
+      "wyvern_baldric",
+      "wyvern_leg_sheath6",
+      "wyvern_gartersheath1",
+      "wyvern_gartersheath2",
+      "wyvern_bootsheath",
+      "wyvern_bscabbard",
+      "wyvern_scabbard",
+      "wyvern_sheath",
+      "wyvern_spearsling",
+      "wyvern_back_holster",
+      "wyvern_baldric_holster",
+      "wyvern_bootstrap",
+      "wyvern_holster",
+      "wyvern_western_holster",
+      "wyvern_sholster",
+      "wyvern_shoulder_holster",
+      "wyvern_side_double_holster",
+      "wyvern_FB_double_holster",
+      "wyvern_XL_holster",
+      "wyvern_XS_holster"
+    ],
+    "difficulty": 4
+  }
+]

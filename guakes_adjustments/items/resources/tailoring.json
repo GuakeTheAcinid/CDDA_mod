@@ -1,0 +1,32 @@
+[
+    {
+      "type": "GENERIC",
+      "id": "cured_wyvern_hide",
+      "symbol": ",",
+      "color": "white",
+      "name": { "str": "cured wyvern hide" },
+      "description": "A rolled-up mutant hide which has been treated to prevent decay.  It still requires tanning to become usable leather.",
+      "price": "0 USD",
+      "price_postapoc": "1 USD 75 cent",
+      "material": [ "mut_scales_fireproof" ],
+      "flags": [ "NO_SALVAGE" ],
+      "weight": "100 g",
+      "volume": "125 ml",
+      "category": "spare_parts",
+      "to_hit": -1
+    },
+    {
+      "type": "GENERIC",
+      "id": "tanning_wyvern_hide",
+      "symbol": ",",
+      "color": "brown",
+      "name": { "str": "tanning wyvern hide" },
+      "description": "A folded 12-inch by 24-inch sheet of leather made from carefully tanned mutant hide.  Can be cut up or used as is.",
+      "price": "0 USD",
+      "price_postapoc": "7 USD 50 cent",
+      "material": [ "mut_scales_fireproof" ],
+      "weight": "740 g",
+      "volume": "186 ml",
+      "category": "spare_parts"
+    }
+]

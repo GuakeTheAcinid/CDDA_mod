@@ -1,0 +1,429 @@
+[
+    {
+      "type": "mutation", "id": "LIZ_EYE",
+      "copy-from": "LIZ_EYE", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "LIZ_IR",
+      "copy-from": "LIZ_IR", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SLIT_NOSTRILS",
+      "copy-from": "SLIT_NOSTRILS", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "FORKED_TONGUE",
+      "copy-from": "FORKED_TONGUE", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "DENSE_BONES",
+      "copy-from": "DENSE_BONES", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "THICKSKIN",
+      "copy-from": "THICKSKIN", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "PER_UP",
+      "copy-from": "PER_UP", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "STR_UP",
+      "copy-from": "STR_UP", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "STR_UP_2",
+      "copy-from": "STR_UP_2", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "DEX_UP",
+      "copy-from": "DEX_UP", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "DEX_UP_2",
+      "copy-from": "DEX_UP_2", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "DEX_UP_3",
+      "copy-from": "DEX_UP_3",
+      "extend":
+      {
+        "category": [ "WYVERN" ],
+        "threshreq": [ "THRESH_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "HEAVYSLEEPER",
+      "copy-from": "HEAVYSLEEPER", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "HEAVYSLEEPER2",
+      "copy-from": "HEAVYSLEEPER2", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "HUNGER",
+      "copy-from": "HUNGER", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "HUNGER2",
+      "copy-from": "HUNGER2", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "ADDICTIVE",
+      "copy-from": "ADDICTIVE", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "CARNIVORE",
+      "copy-from": "CARNIVORE", "extend": { "category": [ "WYVERN" ]}
+    },
+    {
+      "type": "mutation", "id": "PICKYEATER",
+      "copy-from": "PICKYEATER", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "PYROMANIA",
+      "copy-from": "PYROMANIA", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SHOUT1",
+      "copy-from": "SHOUT1", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SHOUT2",
+      "copy-from": "SHOUT2", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SHOUT3",
+      "copy-from": "SHOUT3", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "HISS",
+      "copy-from": "HISS", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SNOUT",
+      "copy-from": "SNOUT",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "MUZZLE_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "TAIL_STUB",
+      "copy-from": "TAIL_STUB",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "TAIL_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "HEADBUMPS",
+      "copy-from": "HEADBUMPS",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "HORNS_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "SKIN_PEELING",
+      "copy-from": "SKIN_PEELING", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SPARSE_SCALES",
+      "copy-from": "SPARSE_SCALES", "extend": { "category": [ "WYVERN" ] }
+    },
+    {
+      "type": "mutation", "id": "SCALES",
+      "copy-from": "SCALES",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "WYVERN_SCALES" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "WEBBED",
+      "copy-from": "WEBBED",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "WINGS_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "RESISTWARM",
+      "copy-from": "RESISTWARM", "extend": { "category": [ "WYVERN" ]}
+    },
+    {
+      "type": "mutation", "id": "STRONGER_RESISTWARM",
+      "copy-from": "STRONGER_RESISTWARM",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "AFFINITYWARM" ],
+        "threshreq": [ "THRESH_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation",
+      "id": "THRESH_WYVERN",
+      "name": { "str": "Wyvern" },
+      "points": 1,
+      "//": "There are glyphs representing You. There are stories telling about You. Now You are here in all glince they were telling about.",
+      "description": "Many biologists would complain about Your current existance, but You may burn them off from now. You are the only alive here to make the rules.",
+      "valid": false,
+      "purifiable": false,
+      "threshold": true,
+      "threshold_substitutes": [ "SCALES" ]
+    },
+    {
+      "type":"mutation",
+      "id": "AFFINITYWARM",
+      "name": { "str": "Heat Affinity" },
+      "description": "You are now much more resistant heat and it is harder for you to overheat, but you suffer to chill more.",
+      "points": 3,
+      "vitamin_cost": 160,
+      "mixed_effect": true,
+      "purifiable": false,
+      "vitamin_rates": [ [ "iron", 7200 ], [ "vitC", 2400 ]  ],
+      "prereqs": [ "STRONGER_RESISTWARM" ],
+      "types": [ "ACCLIMATIZATION" ],
+      "category": [ "WYVERN" ],
+      "threshreq": [ "THRESH_WYVERN" ],
+      "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }, { "value": "CLIMATE_CONTROL_HEAT", "add": -25 } ] } ]
+    },
+    {
+      "type": "mutation",
+      "id": "WINGS_WYVERN",
+      "name": { "str": "Scaled Wings" },
+      "points": 1,
+      "vitamin_cost": 190,
+      "visibility": 9,
+      "ugliness": 3,
+      "mixed_effect": true,
+      "description": "Your arms have grown into a broad pair of shiny scaly wings.  They are awkwardly heavy, get in the way and it's hard to manipulate with them, even when your thumb and point fingers are kept mostly unchanged.",
+      "types": [ "ARMS", "HANDS" ],
+      "enchantments": [ { "values": [ { "value": "KNOCKBACK_RESIST", "add": 25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 } ] } ],
+      "flags": [ "WINGS_2" ],
+      "encumbrance_always": [
+        [ "arm_r", 12 ],
+        [ "arm_l", 12 ],
+        [ "hand_r", 15 ],
+        [ "hand_l", 15 ]
+      ],
+      "encumbrance_covered": [
+        [ "arm_r", 15 ],
+        [ "arm_l", 15 ],
+        [ "hand_r", 12 ],
+        [ "hand_l", 12 ]
+      ],
+      "prereqs": [ "WEBBED" ],
+      "prereqs2": [ "WYVERN_SCALE_PLATES" ],
+      "strict_threshreq": true,
+      "category": [ "WYVERN" ],
+      "restricts_gear": [
+        "arm_l",
+        "arm_r",
+        "hand_l",
+        "hand_r"
+      ],
+      "allow_soft_gear": true,
+      "threshreq": [ "THRESH_WYVERN" ]
+    },
+    {
+      "type": "mutation",
+      "id": "MUZZLE_WYVERN",
+      "name": { "str": "Wyvern Muzzle" },
+      "points": 0,
+      "vitamin_cost": 160,
+      "visibility": 8,
+      "ugliness": 8,
+      "mixed_effect": true,
+      "purifiable": false,
+      "//": "Wyvern mutagen consumed to produce flammable liquid (and many other vitamins)",
+      "vitamin_rates": [ [ "iron", 7200 ], [ "vitC", 2400 ], [ "mutagen_wyvern", -665 ]  ],
+      "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": 0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 } ] } ],
+      "description": "Your face and jaws have grown into a long sleek scaly muzzle with the stop at the level of the brow line and all of the front teeth to be fangs now.  Your cheeks now have a pair of glands like one of a snake, but ain't that much exposed.  You can spit it's highly flammable contents on a wide area to ignite it, with the cost of this liquid is difficult and slow to produce.",
+      "types": [ "MUZZLE" ],
+      "prereqs": [ "SNOUT" ],
+      "category": [ "WYVERN" ],
+      "restricts_gear": [ "mouth" ],
+      "social_modifiers": { "intimidate": 20 },
+      "attacks": {
+        "attack_text_u": "You bite a chunk out of %s!",
+        "attack_text_npc": "%1$s bites a chunk out of %2$s!",
+        "body_part": "mouth",
+        "chance": 18,
+        "base_damage": { "damage_type": "stab", "amount": 18 }
+      },
+      "threshreq": [ "THRESH_WYVERN" ],
+      "active": true,
+      "cost": 8,
+      "time": 80,
+      "kcal": true,
+      "activated_eocs": [ "EOC_mut_spit_flame" ]
+    },
+    {
+      "type": "mutation",
+      "id": "TAIL_WYVERN",
+      "name": { "str": "Whip Tail" },
+      "points": 1,
+      "vitamin_cost": 90,
+      "visibility": 8,
+      "ugliness": 4,
+      "mixed_effect": true,
+      "purifiable": false,
+      "vitamin_rates": [ [ "calcium", 7200 ] ],
+      "description": "You have an extremely long scaly tail.  It makes a fascinating whip and has a bone on the tip resembling a knife, but mostly gets in the way a lot and interrupts to balance as long as you don't keep an eye on it.  Prevents wearing non-fabric pants.",
+      "types": [ "TAIL" ],
+      "prereqs": [ "TAIL_STUB" ],
+      "category": [ "WYVERN" ],
+      "threshreq": [ "THRESH_WYVERN" ],
+      "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+      "allowed_items": [ "ALLOWS_TAIL" ],
+      "allow_soft_gear": true,
+      "attacks": {
+        "attack_text_u": "You whap %s with your tail!",
+        "attack_text_npc": "%1$s whaps %2$s with their tail!",
+        "chance": 20,
+        "strength_damage": { "damage_type": "stab", "amount": 4 }
+      },
+      "//": "MIN of ([DEX / 8] * [[DEX % 8] / 2 + 1] - 2) :or: 2",
+      "//2": "DEX below 8 gives -2 to Dodge chance",
+      "//3": "DEX above 8 gives -1, +0, +1, +2 to Dodge chance on DEX 8, DEX 10, DEX 12, DEX 14",
+      "//4": "DEX above 14 gives no more than +2 to Dodge chance",
+      "//5": "Very long and heavy tail is hard to manipulate, however given enough skills it can help to dodge",
+      "//6": "Being hurt (or other ways to lose stats temporary) will decrease dodge chance. It's hard to move properly when damaged",
+      "enchantments":
+      [
+        {
+          "values":
+          [
+            { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 },
+            { "value": "CARRY_WEIGHT", "add": 19534 },
+            { "value": "DODGE_CHANCE", "add": { "math": [ "min(((u_val('dexterity') / 8) * ((u_val('dexterity') % 8) / 2 + 1) - 2), 2)" ] } }
+          ]
+        }
+      ],
+      "integrated_armor":[ "integrated_wyvern_tail" ]
+    },
+    {
+      "type": "mutation",
+      "id": "HORNS_WYVERN",
+      "name": { "str": "Straight Horns" },
+      "points": 1,
+      "vitamin_cost": 60,
+      "visibility": 3,
+      "ugliness": 1,
+      "description": "You have a pair of small slightly curvy horns on your head, pointing straight back.  They allow you to make a weak cutting headbutt attack, but prevent the use of most rigid headwear.",
+      "types": [ "HORNS" ],
+      "prereqs": [ "HEADBUMPS" ],
+      "category": [ "WYVERN" ],
+      "restricts_gear": [ "head_nape" ],
+      "allow_soft_gear": true,
+      "attacks": {
+        "attack_text_u": "You headbutt %s with your horns!",
+        "attack_text_npc": "%1$s headbutts %2$s with their horns!",
+        "chance": 20,
+        "base_damage": [ { "damage_type": "cut", "amount": 3 }, { "damage_type": "bash", "amount": 3 } ]
+      }
+    },
+    {
+      "type": "mutation",
+      "id": "WYVERN_SCALES",
+      "name": { "str": "Shiny scales" },
+      "points": 3,
+      "vitamin_cost": 160,
+      "visibility": 10,
+      "ugliness": 2,
+      "description": "Your scales became slithery, providing a decent natural armor and slightly improving your ability to swim.  It's color has changed to unnatural light-purple and the texture shines under the light.",
+      "types": [ "SKIN" ],
+      "category": [ "WYVERN" ],
+      "prereqs": [ "SCALES" ],
+      "enchantments":
+      [
+        {
+          "values":
+          [
+            { "value": "MOVECOST_SWIM_MOD", "multiply": -0.1 },
+            { "value": "STEALTH_MODIFIER", "add": -10 }
+          ]
+        }
+      ],
+      "threshreq": [ "THRESH_WYVERN" ],
+      "changes_to": [ "WYVERN_SCALE_PLATES" ],
+      "wet_protection": [
+        { "part": "head", "good": 5 },
+        { "part": "leg_l", "good": 13 },
+        { "part": "leg_r", "good": 13 },
+        { "part": "foot_l", "good": 4 },
+        { "part": "foot_r", "good": 4 },
+        { "part": "arm_l", "good": 13 },
+        { "part": "arm_r", "good": 13 },
+        { "part": "hand_l", "good": 3 },
+        { "part": "hand_r", "good": 3 },
+        { "part": "torso", "good": 25 }
+      ],
+      "armor": [ { "part_types": [ "tail" ], "cut": 7, "bash": 4 } ],
+      "integrated_armor": [ "integrated_wyvern_scales" ]
+    },
+    {
+      "type": "mutation",
+      "id": "WYVERN_CROWN_VISIBILITY",
+      "name": { "str": "Crown visibility" },
+      "points": 0,
+      "vitamin_cost": 0,
+      "visibility": 0,
+      "ugliness": 0,
+      "description": "Better overlay visibility.",
+      "purifiable": false,
+      "prereqs": [ "WYVERN_SCALE_PLATES" ],
+      "category": [ "WYVERN" ],
+      "player_display": false,
+      "threshreq": [ "THRESH_WYVERN" ]
+    },
+    {
+      "type": "mutation",
+      "id": "WYVERN_SCALE_PLATES",
+      "name": { "str": "Glittering plates" },
+      "points": 4,
+      "vitamin_cost": 260,
+      "visibility": 10,
+      "ugliness": 3,
+      "description": "A set of thick and hardened shiny bone plates is covering your vitals, providing a solid, but brittle protection.  The whole body is covered in dark-purple scales, reflecting the surroundings and glittering bright under the light like a polished gold.",
+      "purifiable": false,
+      "vitamin_rates": [ [ "calcium", 1200 ] ],
+      "types": [ "SKIN" ],
+      "category": [ "WYVERN" ],
+      "prereqs": [ "WYVERN_SCALES" ],
+      "prereqs2": [ "AFFINITYWARM" ],
+      "leads_to": [ "WYVERN_CROWN_VISIBILITY" ],
+      "restricts_gear": [ "torso_upper", "torso_lower", "head_forehead", "head_crown" ],
+      "allow_soft_gear": true,
+      "allowed_items": [ "ALLOWS_TAIL" ],
+      "destroys_gear": true,
+      "enchantments":
+      [
+        {
+          "values":
+          [
+            { "value": "CARRY_WEIGHT", "add": 8100 },
+            { "value": "MOVECOST_SWIM_MOD", "multiply": -0.1 },
+            { "value": "STEALTH_MODIFIER", "add": -20 }
+          ]
+        }
+      ],
+      "threshreq": [ "THRESH_WYVERN" ],
+      "wet_protection": [
+        { "part": "head", "good": 7 },
+        { "part": "leg_l", "good": 16 },
+        { "part": "leg_r", "good": 16 },
+        { "part": "foot_l", "good": 5 },
+        { "part": "foot_r", "good": 5 },
+        { "part": "arm_l", "good": 14 },
+        { "part": "arm_r", "good": 14 },
+        { "part": "hand_l", "good": 4 },
+        { "part": "hand_r", "good": 4 },
+        { "part": "torso", "good": 40 }
+      ],
+      "armor": [ { "part_types": [ "tail" ], "cut": 7, "bullet": 4} ],
+      "integrated_armor": [ "integrated_wyvern_plates" ]
+    }
+]

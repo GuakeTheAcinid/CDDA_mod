@@ -1,0 +1,546 @@
+[
+  {
+    "id": "bio_eyes_shield_installed",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "eye shield" },
+    "description": "A pair of lenses which You can hide by activating them.",
+    "weight": "60 g",
+    "volume": "20 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "material": [ "plastic", "lvl4ballisticglass" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "use_action": { "type": "transform", "menu_text": "Hide lenses", "target": "bio_eyes_shield_installed_hidden", "msg": "You hide your shield lenses." },
+    "warmth": 0,
+    "material_thickness": 1.0,
+    "environmental_protection": 10,
+    "flags": [
+      "INTEGRATED",
+      "UNBREAKABLE",
+      "SKINTIGHT",
+      "SOFT",
+      "WATER_FRIENDLY",
+      "SUN_GLASSES",
+      "NO_REPAIR",
+      "SWIM_GOGGLES",
+      "NO_SALVAGE"
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "plastic", "covered_by_mat": 100, "thickness": 0.5 },
+          { "type": "lvl4ballisticglass", "covered_by_mat": 100, "thickness": 0.5 }
+        ],
+        "covers": [ "eyes" ],
+        "coverage": 100,
+        "encumbrance": 1,
+        "rigid_layer_only": true,
+        "cover_vitals": 90
+      }
+    ]
+  },
+  {
+    "id": "bio_eyes_shield_installed_hidden",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "eye shield (hidden)" },
+    "description": "A pair of lenses which You can reveal by activating them.",
+    "weight": "60 g",
+    "volume": "20 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "material": [ "plastic", "lvl4ballisticglass" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "use_action": { "type": "transform", "menu_text": "Reveal lenses", "target": "bio_eyes_shield_installed", "msg": "You reveal your shield lenses." },
+    "warmth": 0,
+    "material_thickness": 1.0,
+    "environmental_protection": 0,
+    "flags": [
+      "INTEGRATED",
+      "UNBREAKABLE",
+      "SKINTIGHT",
+      "SOFT",
+      "WATER_FRIENDLY",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "id": "integrated_wyvern_scales",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "shiny scales" },
+    "description": "Your scales are now very shiny and smooth, also seem to protect you from open fires a bit. Their color has changed to light-purple, giving you an unnatural look.",
+    "weight": "2 kg",
+    "volume": "1800 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [ "flesh", "mut_scales_fireproof" ],
+    "symbol": "x",
+    "color": "light_red",
+    "warmth": 3,
+    "environmental_protection": 4,
+    "flags": [
+      "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
+      "SKINTIGHT",
+      "WATER_FRIENDLY",
+      "IRRITANT_IMMUNE",
+      "TOUGH_FEET",
+      "ALLOWS_TALONS",
+      "TRADER_AVOID",
+      "NO_DROP"
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "hand_l", "hand_r", "foot_l", "foot_r" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "mouth" ],
+        "coverage": 100,
+        "encumbrance": 2
+      }
+    ]
+  },
+  {
+    "id": "wyvern_upper_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "glittering upper plate" },
+    "description": "A pentagon bone plate with a slightly concave profile, growing out of your torso. Acts like a ballistic plate. Glitters much under the light.",
+    "weight": "2500 g",
+    "volume": "1915 ml",
+    "longest_side": "32 cm",
+    "//": "ESAPI Medium are 24.13cm x 31.75cm and 2.5cm thick",
+    "material": [ "wyvern_external_bone" ],
+    "symbol": "x",
+    "color": "dark_gray",
+    "material_thickness": 25,
+    "non_functional": "destroyed_wyvern_upper_plate",
+    "damage_verb": "cracks with a crunch you feel through the whole body",
+    "flags": [
+      "NORMAL",
+      "UNBREAKABLE",
+      "INTEGRATED",
+      "ABLATIVE_LARGE",
+      "CANT_WEAR",
+      "TRADER_AVOID"
+    ],
+    "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
+  },
+  {
+    "id": "wyvern_lower_plate",
+    "type": "ARMOR",
+    "copy-from": "wyvern_upper_plate",
+    "name": { "str": "glittering lower plate" },
+    "non_functional": "destroyed_wyvern_lower_plate",
+    "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ] } ]
+  },
+  {
+    "id": "destroyed_wyvern_upper_plate",
+    "type": "ARMOR",
+    "copy-from": "wyvern_upper_plate",
+    "name": { "str": "compromised upper plate" },
+    "description": "One of your bone plates that has been cracked by damage. It's still intact enough to cling onto you.",
+    "material": [ "damaged_wyvern_external_bone" ],
+    "non_functional": "shattered_wyvern_upper_plate",
+    "damage_verb": "shatters into pieces as you feel some of them piercing into your body",
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "//": "transforms over 0.75 day",
+    "countdown_interval": "18 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates fully regenerates."
+    },
+    "revert_to": "wyvern_upper_plate"
+  },
+  {
+    "id": "shattered_wyvern_upper_plate",
+    "type": "ARMOR",
+    "copy-from": "destroyed_wyvern_upper_plate",
+    "name": { "str": "shattered upper plate" },
+    "description": "One of your bone plates that has been shattered by damage. Some pieces are <bad>painfully</bad> piercing into your flesh and a few are lost.",
+    "weight": "2173 g",
+    "volume": "1665 ml",
+    "material": [ "shattered_wyvern_external_bone" ],
+    "armor": [ { "encumbrance": 2, "coverage": 39, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ],
+    "//": "transforms over 1 day",
+    "countdown_interval": "24 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates partially regenerates."
+    },
+    "revert_to": "destroyed_wyvern_upper_plate"
+  },
+  {
+    "id": "destroyed_wyvern_lower_plate",
+    "type": "ARMOR",
+    "copy-from": "destroyed_wyvern_upper_plate",
+    "name": { "str": "compromised lower plate" },
+    "looks_like": "wyvern_lower_plate",
+    "non_functional": "shattered_wyvern_lower_plate",
+    "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ] } ],
+    "revert_to": "wyvern_lower_plate"
+  },
+  {
+    "id": "shattered_wyvern_lower_plate",
+    "type": "ARMOR",
+    "copy-from": "shattered_wyvern_upper_plate",
+    "name": { "str": "shattered lower plate" },
+    "looks_like": "wyvern_lower_plate",
+    "non_functional": "shattered_wyvern_lower_plate",
+    "armor": [ { "encumbrance": 2, "coverage": 39, "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ] } ],
+    "revert_to": "destroyed_wyvern_lower_plate"
+  },
+  {
+    "id": "wyvern_muzzle_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "glittering muzzle plate" },
+    "//3": "7.62cm x 15.24cm x 2.5cm",
+    "description": "A polygonal bone plate growing out of top of your muzzle. Acts like a ballistic plate. Glitters much under the light.",
+    "weight": "372 g",
+    "volume": "290 ml",
+    "longest_side": "15 cm",
+    "material": [ "wyvern_external_bone" ],
+    "symbol": "x",
+    "color": "dark_gray",
+    "material_thickness": 25,
+    "non_functional": "destroyed_wyvern_muzzle_plate",
+    "damage_verb": "cracks with a crunch you feel through the whole body",
+    "flags": [
+      "NORMAL",
+      "UNBREAKABLE",
+      "INTEGRATED",
+      "ABLATIVE_MEDIUM",
+      "CANT_WEAR",
+      "TRADER_AVOID"
+    ],
+    "armor": [ { "encumbrance": 1, "coverage": 95, "covers": [ "head" ], "specifically_covers": [ "mouth_nose" ] } ]
+  },
+  {
+    "id": "destroyed_wyvern_muzzle_plate",
+    "type": "ARMOR",
+    "copy-from": "wyvern_muzzle_plate",
+    "name": { "str": "compromised muzzle plate" },
+    "description": "One of your bone plates that has been cracked by damage. Feels like a broken nose.",
+    "looks_like": "wyvern_muzzle_plate",
+    "material": [ "damaged_wyvern_external_bone" ],
+    "non_functional": "shattered_wyvern_muzzle_plate",
+    "damage_verb": "shatters into pieces as you feel some of them piercing into your face",
+    "//": "transforms over 0.75 day",
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "countdown_interval": "18 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates fully regenerates."
+    },
+    "revert_to": "wyvern_muzzle_plate"
+  },
+  {
+    "id": "shattered_wyvern_muzzle_plate",
+    "type": "ARMOR",
+    "copy-from": "destroyed_wyvern_muzzle_plate",
+    "name": { "str": "shattered muzzle plate" },
+    "//3": "7.62cm x 15.24cm x 2.5cm",
+    "description": "One of your bone plates that has been shattered by damage. It is <bad>terribly painful</bad>!",
+    "weight": "323 g",
+    "volume": "252 ml",
+    "material": [ "shattered_wyvern_external_bone" ],
+    "armor": [ { "encumbrance": 1, "coverage": 83, "covers": [ "head" ], "specifically_covers": [ "mouth_nose" ] } ],
+    "countdown_interval": "24 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates partially regenerates."
+    },
+    "revert_to": "destroyed_wyvern_muzzle_plate"
+  },
+  {
+    "id": "wyvern_crown_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "glittering crown plate" },
+    "//3": " 15.24cm x 22.86cm x 2.5cm",
+    "description": "A polygonal bone plate growing out of your forehead and crown. Acts like a ballistic plate. Looks like an actual crown.",
+    "weight": "1117 g",
+    "volume": "870 ml",
+    "longest_side": "23 cm",
+    "material": [ "wyvern_external_bone" ],
+    "symbol": "x",
+    "color": "dark_gray",
+    "material_thickness": 25,
+    "non_functional": "destroyed_wyvern_crown_plate",
+    "damage_verb": "cracks with a crunch you feel through the whole body",
+    "flags": [
+      "NORMAL",
+      "UNBREAKABLE",
+      "INTEGRATED",
+      "ABLATIVE_MEDIUM",
+      "CANT_WEAR",
+      "TRADER_AVOID"
+    ],
+    "armor": [ { "encumbrance": 1, "coverage": 95, "covers": [ "head" ], "specifically_covers": [ "head_forehead", "head_crown" ] } ]
+  },
+  {
+    "id": "destroyed_wyvern_crown_plate",
+    "type": "ARMOR",
+    "copy-from": "wyvern_crown_plate",
+    "name": { "str": "compromised crown plate" },
+    "description": "One of your bone plates that has been cracked by damage. Still looks like some sort of a crown though.",
+    "looks_like": "wyvern_crown_plate",
+    "material": [ "damaged_wyvern_external_bone" ],
+    "non_functional": "shattered_wyvern_crown_plate",
+    "damage_verb": "shatters into pieces as you feel some of them piercing into your head",
+    "//": "transforms over 0.75 day",
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "countdown_interval": "18 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates fully regenerates."
+    },
+    "revert_to": "wyvern_crown_plate"
+  },
+  {
+    "id": "shattered_wyvern_crown_plate",
+    "type": "ARMOR",
+    "copy-from": "destroyed_wyvern_crown_plate",
+    "name": { "str": "shattered crown plate" },
+    "//3": " 15.24cm x 22.86cm x 2.5cm",
+    "description": "One of your bone plates that has been shattered by damage. Feels <bad>painfully</bad> like a crown of thorns literally!",
+    "weight": "971 g",
+    "volume": "756 ml",
+    "material": [ "shattered_wyvern_external_bone" ],
+    "armor": [ { "encumbrance": 1, "coverage": 83, "covers": [ "head" ], "specifically_covers": [ "head_forehead", "head_crown" ] } ],
+    "countdown_interval": "24 hours",
+    "countdown_action": {
+      "type": "message",
+      "message": "One of your bone plates partially regenerates."
+    },
+    "revert_to": "destroyed_wyvern_crown_plate"
+  },
+  {
+    "id": "integrated_wyvern_plates",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "glittering scales" },
+    "description": "Your scales have thickened and now dark-purple in color. Additionally a set of hardened bone plates grow through scales on your torso and head. Shines like a polished gold.",
+    "weight": "2 kg",
+    "volume": "1800 ml",
+    "material": [ "flesh", "mut_scales_fireproof" ],
+    "symbol": "x",
+    "color": "light_red",
+    "warmth": 3,
+    "environmental_protection": 8,
+    "flags": [
+      "INTEGRATED",
+      "UNBREAKABLE",
+      "SKINTIGHT",
+      "IRRITANT_IMMUNE",
+      "WATER_FRIENDLY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "TOUGH_FEET",
+      "ALLOWS_TALONS",
+      "PADDED",
+      "NO_UNLOAD",
+      "TRADER_AVOID"
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "900 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "25 cm",
+        "description": "Place where the bone plate grows through.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      }
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown", "mouth_nose" ],
+        "coverage": 100,
+        "encumbrance": 3,
+        "layers": [ "NORMAL" ]
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "encumbrance": 3,
+        "layers": [ "NORMAL" ]
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_nape", "head_throat", "head_ear_r", "head_ear_l" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.5 }
+        ],
+        "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "hand_l", "hand_r", "foot_l", "foot_r" ],
+        "coverage": 100,
+        "encumbrance": 3
+      },
+      {
+        "material": [
+          { "type": "flesh", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 95, "thickness": 2.0 }
+        ],
+        "covers": [ "mouth" ],
+        "specifically_covers": [ "mouth_lips", "mouth_cheeks", "mouth_chin" ],
+        "coverage": 100,
+        "encumbrance": 2
+      }
+    ]
+  },
+  {
+    "id": "integrated_wyvern_tail",
+    "type": "ARMOR",
+    "category": "tool",
+    "name": { "str_sp": "whip tail" },
+    "description": "Your extremely long and shiny tail.  There is a bone at the tip that resembles of a knife.",
+    "//": "volume:25070 ml - weight:32556 g <density 1,298> or weight: 24819 g <density 0,990>",
+    "weight": "32556 g",
+    "volume": "25070 ml",
+    "longest_side": "285 cm",
+    "material": [ "flesh", "blood", "mut_bone", "mut_scales_fireproof" ],
+    "symbol": "x",
+    "color": "light_red",
+    "flags": [
+      "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
+      "WATER_FRIENDLY",
+      "TRADER_AVOID",
+      "PROVIDES_TECHNIQUES"
+    ],
+    "//2": "Serves as a strong fifth limb and a rope",
+    "techniques": [ "WBLOCK_1", "WRAP", "SWEEP" ],
+    "//3": "The bone-knife tail-end serves as a normal bone knife since it can be held as one.",
+    "qualities": [
+      [ "CUT", 1],
+      [ "BUTCHER", 12 ],
+      [ "ROPE", 1 ]
+    ],
+    "pocket_data": [
+      {
+        "//": "Copied from a rope. Universal pocket, can store almost anything sans liquid and very small items, at the price of high move and encumbrance cost.",
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "10 L",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "110 cm",
+        "moves": 450,
+        "holster": true
+      }
+    ]
+  }
+]

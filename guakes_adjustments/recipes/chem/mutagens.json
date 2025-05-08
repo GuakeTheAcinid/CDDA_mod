@@ -1,0 +1,79 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "mutagen_wyvern",
+    "//": "Impossible to made as \"NESTED\" recipe due to inability of copy-from nested-recipe",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 1 ],
+    "difficulty": 8,
+    "time": "20 m",
+    "book_learn": [ [ "recipe_wyvern", 7 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_intro_chem_synth" },
+      { "proficiency": "prof_chem_synth" }
+    ],
+    "using": [ [ "mutagen_production_standard", 50 ] ],
+    "components": [
+      [ [ "mutagen", 1 ] ],
+      [ [ "wyvern_sample", 1 ] ],
+      [ [ "avgas", 5 ], [ "magnesium", 120 ] ],
+      [ [ "chitin_piece", 12 ], [ "wyvern_sample", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "iv_mutagen_wyvern",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 3 ],
+    "difficulty": 8,
+    "time": "2 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_wyvern", 7 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_intro_chem_synth" },
+      { "proficiency": "prof_chem_synth" }
+    ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_wyvern", 1 ] ], [ [ "wyvern_sample", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "wyvern_sample",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "chemistry",
+    "skills_required": [ "survival", 3 ],
+    "difficulty": 5,
+    "time": "5 m",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_wyvern", 5 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_intro_chem_synth" },
+      { "proficiency": "prof_chem_synth" }
+    ],
+    "using": [ [ "mutagen_production_standard", 10 ] ],
+    "//": "Wyvern is a lizard, with hard carapace as an insect (+flammable liquid) and flexability of a fish. Chiropteran for wings mb?",
+    "components": [
+      [ [ "mutagen", 1 ] ],
+      [ [ "chiropteran_sample", 1 ], [ "fish_sample", 1 ] ],
+      [ [ "lizard_sample", 1 ] ],
+      [ [ "insect_sample", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  }
+]

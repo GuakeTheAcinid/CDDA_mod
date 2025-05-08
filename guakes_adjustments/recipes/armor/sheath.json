@@ -1,0 +1,195 @@
+[
+  {
+    "result": "wyvern_axe_ring",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "20 m",
+    "autolearn": true,
+    "reversible": true,
+    "using": [ [ "adhesive", 1 ], [ "tailoring_wyvern_leather", 2 ], [ "clasps", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "nail", 4 ], [ "bronze_nail", 4 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  },
+  {
+    "result": "wyvern_baldric",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "melee", 1 ],
+    "time": "4 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 3 ], [ "clasps", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ],
+    "components": [ [ [ "2x4", 2 ] ], [ [ "nail", 8 ], [ "bronze_nail", 8 ] ] ]
+  },
+  {
+    "result": "wyvern_leg_sheath6",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "throw", 1 ],
+    "time": "4 h 30 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 5 ], [ "clasps", 3 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  },
+  {
+    "result": "wyvern_gartersheath1",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "melee", 1 ],
+    "time": "1 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 2 ], [ "plastic_molding", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_plasticworking" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  },
+  {
+    "result": "wyvern_gartersheath2",
+    "type": "recipe",
+    "copy-from": "wyvern_gartersheath1",
+    "time": "2 h",
+    "using": [ [ "tailoring_wyvern_leather", 4 ], [ "plastic_molding", 2 ] ]
+  },
+  {
+    "result": "wyvern_bootsheath",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "melee", 1 ],
+    "time": "2 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 1 ], [ "clasps", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  },
+  {
+    "result": "wyvern_bscabbard",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "melee", 1 ],
+    "time": "4 h",
+    "autolearn": true,
+    "reversible": { "time": "40 m" },
+    "using": [ [ "tailoring_wyvern_leather", 4 ], [ "adhesive", 1 ], [ "clasps", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ],
+    "components": [ [ [ "2x4", 2 ] ], [ [ "nail", 10 ], [ "bronze_nail", 10 ] ] ]
+  },
+  {
+    "result": "wyvern_scabbard",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "melee", 1 ],
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 3 ], [ "clasps", 1 ], [ "adhesive", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "2x4", 2 ] ], [ [ "nail", 5 ], [ "bronze_nail", 5 ] ] ]
+  },
+  {
+    "result": "wyvern_sheath",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "melee", 1 ],
+    "time": "4 h",
+    "reversible": { "time": "25 m" },
+    "autolearn": true,
+    "using": [ [ "tailoring_wyvern_leather", 1 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ],
+    "components": [ [ [ "strap_small", 1, "LIST" ] ], [ [ "clasps", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "wyvern_spearsling",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "melee", 1 ],
+    "time": "45 m",
+    "autolearn": true,
+    "reversible": true,
+    "using": [ [ "tailoring_wyvern_leather", 2 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_closures_waterproofing" },
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" }
+    ],
+    "components": [ [ [ "strap_large", 1, "LIST" ] ], [ [ "clasps", 1, "LIST" ] ] ]
+  }
+]

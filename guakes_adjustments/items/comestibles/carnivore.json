@@ -1,0 +1,14 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "raw_wyvern_leather",
+    "copy-from": "raw_leather",
+    "name": { "str_sp": "raw wyvern skin" },
+    "weight": "150 g",
+    "calories": 260,
+    "description": "A carefully folded raw skin harvested from a mutanted human.  You can cure it for storage and tanning, or eat it if you're desperate enough.",
+    "price": "0 USD",
+    "price_postapoc": "75 cent",
+    "material": [ "hflesh", "mut_scales_fireproof" ]
+  }
+]

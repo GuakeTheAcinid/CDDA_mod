@@ -1,0 +1,23 @@
+[
+    {
+      "id": "bionics",
+      "type": "item_group",
+      "copy-from": "bionics",
+      "extend": {
+        "items": [
+            [ "bio_eyes_shield", 10 ]
+        ]
+      }
+    },
+    {
+      "id": "bionics_common",
+      "type": "item_group",
+      "copy-from": "bionics_common",
+      "extend": {
+        "items": [
+            [ "bio_eyes_shield", 10 ]
+        ]
+      }
+    }
+  ]
+  

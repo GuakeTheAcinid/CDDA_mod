@@ -1,0 +1,13 @@
+[
+    {
+      "type": "mutation_category",
+      "id": "WYVERN",
+      "name": "Wyvern",
+      "threshold_mut": "THRESH_WYVERN",
+      "mutagen_message": "Your inners scorch… the warmth is pleasing.",
+      "memorial_message": "Risen from the ashes.",
+      "vitamin": "mutagen_wyvern",
+      "base_removal_chance": 33,
+      "base_removal_cost_mul": 2.5
+    }
+]

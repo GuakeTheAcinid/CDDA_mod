@@ -1,0 +1,21 @@
+[
+    {
+      "type": "overlay_order",
+      "overlay_ordering": [
+        { "id": [ "WYVERN_SCALE_PLATES", "WYVERN_SCALES" ], "order": 1500 },
+        { "id": [ "HORNS_WYVERN" ], "order": 1550 },
+        {
+          "id": [
+            "hair_very_long",
+            "hair_extremely_long",
+            "hair_body_length"
+          ],
+          "order": 1600
+        },
+        { "id": [ "WYVERN_CROWN_VISIBILITY" ], "order": 1650 },
+        { "id": [ "TAIL_WYVERN" ], "order": 3500 },
+        { "id": [ "WINGS_WYVERN" ], "order": 5000 },
+        { "id": [ "MUZZLE_WYVERN" ], "order": 7000 }
+      ]
+    }
+  ]

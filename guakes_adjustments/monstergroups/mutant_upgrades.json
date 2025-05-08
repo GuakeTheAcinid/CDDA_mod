@@ -1,0 +1,10 @@
+[
+    {
+      "name": "GROUP_MUTANT_EVOLVED",
+      "type": "monstergroup",
+      "default": "mon_mutant_evolved",
+      "monsters": [
+        { "monster": "mon_ga_mutant_wyvern", "weight": 60 }
+      ]
+    }
+]

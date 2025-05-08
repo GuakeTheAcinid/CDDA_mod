@@ -1,0 +1,12 @@
+[
+    {
+      "type": "GENERIC",
+      "id": "wyvern_sample",
+      "copy-from": "mutagen_sample",
+      "color": "magenta",
+      "name": { "str": "wyvern sample" },
+      "description": "A slurry of authority.",
+      "looks_like": "medical_sample",
+      "material": [ "flesh", "blood" ]
+    }
+]

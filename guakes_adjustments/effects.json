@@ -1,0 +1,78 @@
+[
+  {
+    "type": "effect_type",
+    "id": "mutagen_wyvern",
+    "name": [ "Wyvern Mutation", "Wyvern Transformation", "Wyvern Metamorphosis" ],
+    "//1": "A bare shine distracts you much. You want more shine…",
+    "desc": [
+      "You consumed wyvern primer.",
+      "Your skin seems smooth and shiny… like plate armour.",
+      "The inner fire burns your veins!"
+    ],
+    "max_intensity": 3,
+    "resist_traits": [ "THRESH_WYVERN" ],
+    "base_mods": {
+      "hunger_min": [ 5, 0 ],
+      "hunger_max": [ 15, 0 ],
+      "hunger_tick": [ 500 ],
+      "hurt_min": [ 1, 0 ],
+      "hurt_max": [ 2, 0 ],
+      "hurt_chance": [ -22 ],
+      "hurt_tick": [ 50 ],
+      "pain_min": [ 1, 0 ],
+      "pain_max": [ 2, 0 ],
+      "pain_chance": [ 100 ],
+      "pain_tick": [ 75 ]
+    },
+    "scaling_mods": {
+      "hunger_tick": [ -200, 0 ],
+      "str_mod": [ 1.0, 0 ],
+      "dex_mod": [ 1.5, 0 ],
+      "int_mod": [ -1.75, 0 ],
+      "//": "Only the below initially had zero (if resist)",
+      "hurt_chance": [ 21, 0 ],
+      "pain_chance": [ -30 ]
+    },
+    "rating": "bad",
+    "blood_analysis_description": "Wyvern Primer Contamination"
+  },
+  {
+    "type": "effect_type",
+    "id": "chem_gland_chem",
+    "name": [ "Depleted chem", "Deflated chem glands", "Chemical glands", "Bulged chem glands" ],
+    "show_intensity": true,
+    "desc": [
+      "Your chem glands are empty.  Given some time they will recharge.",
+      "Your chem glands are almost empty.  Given some time they will recharge.",
+      "Your chem glands have some chem inside.  Given some time, more chem will be generated.",
+      "Your chem glands are bulged and full.  No more chem is being created."
+    ],
+    "max_intensity": 4,
+    "rating": "neutral"
+  },
+  {
+    "type": "effect_type",
+    "id": "puncture",
+    "name": [ "Puncture Wound" ],
+    "desc": [ "Something is puncturing your skin." ],
+    "max_intensity": 32,
+    "max_effective_intensity": 10,
+    "miss_messages": [ [ "You feel a puncture.", 10 ] ],
+    "rating": "bad",
+    "immune_bp_flags": [ "BIONIC_LIMB" ],
+    "immune_flags": [ "PAIN_IMMUNE" ],
+    "resist_traits": [ "PAINRESIST" ],
+    "pain_sizing": true,
+    "base_mods": {
+      "pain_max": [ 4, 2 ],
+      "pain_min": [ 2, 1 ],
+      "pain_chance": [ 150, 450 ],
+      "pain_max_val": [ 8, 5 ]
+    },
+    "scaling_mods": {
+      "pain_chance": [ -12, -36 ],
+      "pain_max_val": [ 7, 4 ]
+    },
+    "show_in_info": true
+  }
+]

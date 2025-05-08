@@ -1,0 +1,41 @@
+[
+    {
+      "id": "FIRE_SPIT",
+      "type": "SPELL",
+      "name": { "str": "Fire Spit" },
+      "description": "You open your mouth and spit flame, igniting a large area.",
+      "effect": "attack",
+      "effect_str": "onfire",
+      "affected_body_parts": [ "torso" ],
+      "shape": "cone",
+      "valid_targets": [ "hostile", "ground" ],
+      "flags": [ 
+        "IGNITE_FLAMMABLE",
+        "NO_EXPLOSION_SFX",
+        "NO_HANDS",
+        "NO_LEGS",
+        "NON_MAGICAL"
+      ],
+      "max_level": 2,
+      "min_damage": 4,
+      "max_damage": 12,
+      "damage_increment": 8.0,
+      "min_range": 4,
+      "max_range": 8,
+      "range_increment": 4,
+      "min_aoe": 30,
+      "max_aoe": 45,
+      "aoe_increment": 15.0,
+      "min_duration": 15,
+      "max_duration": 20,
+      "duration_increment": 5,
+      "base_casting_time": 80,
+      "field_id": "fd_fire",
+      "min_field_intensity": 2,
+      "max_field_intensity": 2,
+      "field_intensity_variance": 0.6,
+      "field_chance": 1,
+      "//": "sound_description: TEST",
+      "damage_type": "heat"
+    }
+]

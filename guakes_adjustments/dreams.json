@@ -1,0 +1,47 @@
+[
+    {
+      "type": "dream",
+      "messages": [
+        "You have a strange dream about winged snakes.",
+        "Your dreams give you a strange scorching feeling."
+      ],
+      "category": "WYVERN",
+      "strength": 1
+    },
+    {
+      "type": "dream",
+      "messages": [
+        "You dream of a fire.  Whole dream is just about the fire.",
+        "You are at the camping, in the middle of the camp as a bonfire… what?",
+        "You wonder why it is so hard to fly with your wings… wait, wings?"
+      ],
+      "category": "WYVERN",
+      "strength": 2
+    },
+    {
+      "type": "dream",
+      "messages": [
+        "You dream of a typical Knight-and-Dragon fabel, but you are the dragon.",
+        "You think it is a bad idea to fly during a thunderstorm and decide to stay home and lit a fireplace with your breath. Just a breath?"
+      ],
+      "category": "WYVERN",
+      "strength": 3
+    },
+    {
+      "type": "dream",
+      "//": "Dreams about the cataclysm are just POV",
+      "//2": "Should add a large abount of dreams if wanna make it appear frequently",
+      "//3": "The freezing wind knocks you down into the snow.  You are exhausted, sinking deeper into the sea of snow, choking.  So cold.  so… terrible nightmare.",
+      "messages": [
+        "You dream of the cataclysm, flying over a burning city.  The fire illuminates the sky and warms the air.  It's so cozy, like you are home.",
+        "You dream of a glorious fight, as it abruptly becomes a nightmare as your armor CRAACKS… a shivering cold rushes through your body.",
+        "You dream of a burned ruins you left behind after a successful raid.",
+        "You dream of breathing plasma, burning through the hardest armor possible.",
+        "You dream of teaching cavemen to lit a fire.",
+        "You dream of becoming a dragon.  Wait, you are one already…",
+        "You are the flame in a shape of a dragon, spreading across every itch of the dream…"
+    ],
+      "category": "WYVERN",
+      "strength": 4
+    }
+]

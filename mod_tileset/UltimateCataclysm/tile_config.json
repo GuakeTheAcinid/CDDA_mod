@@ -1,0 +1,98 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset\\UltimateCataclysm\\human_body.png",
+        "//": "range 1 to 48",
+        "tiles": [
+          { "id": "overlay_female_mutation_WYVERN_SCALES", "fg": 0 },
+          { "id": "overlay_male_mutation_WYVERN_SCALES", "fg": 1 },
+          { "id": "overlay_female_mutation_WYVERN_SCALE_PLATES", "fg": 2 },
+          { "id": "overlay_male_mutation_WYVERN_SCALE_PLATES", "fg": 3 },
+          { "id": "overlay_female_mutation_WYVERN_CROWN_VISIBILITY", "fg": 4 },
+          { "id": "overlay_male_mutation_WYVERN_CROWN_VISIBILITY", "fg": 5 },
+          { "id": "overlay_female_mutation_MUZZLE_WYVERN", "fg": 6 },
+          { "id": "overlay_male_mutation_MUZZLE_WYVERN", "fg": 7 },
+          { "id": "overlay_female_mutation_WINGS_WYVERN", "fg": 8 },
+          { "id": "overlay_male_mutation_WINGS_WYVERN", "fg": 9 },
+          { "id": "overlay_female_mutation_TAIL_WYVERN", "fg": 10 },
+          { "id": "overlay_male_mutation_TAIL_WYVERN", "fg": 11 },
+          { "id": "overlay_female_mutation_HORNS_WYVERN", "fg": 12 },
+          { "id": "overlay_male_mutation_HORNS_WYVERN", "fg": 13 },
+          { "id": [ "overlay_female_worn_poncho_wyvern", "overlay_female_worn_poncho_wyvern_padded" ], "fg": 16 },
+          { "id": [ "overlay_male_worn_poncho_wyvern", "overlay_male_worn_poncho_wyvern_padded" ], "fg": 17 },
+          { "id": [ "overlay_female_wielded_wyvern_scythe", "overlay_male_wielded_wyvern_scythe" ], "fg": 18 },
+          { "id": [ "overlay_female_wielded_wyvern_skull", "overlay_male_wielded_wyvern_skull" ], "fg": 19 },
+          { "id": [ "overlay_female_wielded_wyvern_skull_chiseled", "overlay_male_wielded_wyvern_skull_chiseled" ], "fg": 20 },
+          { "id": [ "overlay_female_wielded_wyvern_skull_helmet", "overlay_male_wielded_wyvern_scythe" ], "fg": 21 },
+          { "id": [ "overlay_female_wielded_wyvern_skull_helmet_advanced", "overlay_male_wielded_wyvern_scythe" ], "fg": 22 },
+          { "id": "overlay_female_worn_trenchcoat_wyvern", "fg": 23 },
+          { "id": "overlay_male_worn_trenchcoat_wyvern", "fg": 24 },
+          { "id": "overlay_female_worn_pants_wyvern", "fg": 25 },
+          { "id": "overlay_male_worn_pants_wyvern", "fg": 26 },
+          { "id": "overlay_female_worn_hood_wyvern", "fg": 27 },
+          { "id": "overlay_male_worn_hood_wyvern", "fg": 28 },
+          { "id": "overlay_female_worn_hood_wyvern", "fg": 27 },
+          { "id": "overlay_male_worn_hood_wyvern", "fg": 28 },
+          { "id": "overlay_female_worn_bio_eyes_shield_installed_hidden", "fg": 32 },
+          { "id": "overlay_male_worn_bio_eyes_shield_installed_hidden", "fg": 33 },
+          { "id": "overlay_female_worn_bio_eyes_shield_installed", "fg": 34 },
+          { "id": "overlay_male_worn_bio_eyes_shield_installed", "fg": 35 }
+        ],
+        "sprite_width": 32,
+        "sprite_height": 36,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -8
+      },
+      {
+        "file": "mod_tileset\\UltimateCataclysm\\large.png",
+        "//": "range 49 to 56",
+        "tiles": [
+          { "id": "mon_ga_mutant_wyvern", "fg": 49, "bg": 48 },
+          { "id": "overlay_female_wielded_wyvern_spear", "fg": 50 },
+          { "id": "overlay_male_wielded_wyvern_spear", "fg": 51 }
+        ],
+        "sprite_width": 64,
+        "sprite_height": 64,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "mod_tileset\\UltimateCataclysm\\tall.png",
+        "//": "range 57 to 72",
+        "tiles": [
+          { "id": "overlay_female_worn_wyvern_skull", "fg": 56 },
+          { "id": "overlay_male_worn_wyvern_skull", "fg": 57 },
+          { "id": "overlay_female_worn_wyvern_skull_chiseled", "fg": 58 },
+          { "id": "overlay_male_worn_wyvern_skull_chiseled", "fg": 59 },
+          { "id": "overlay_female_worn_wyvern_skull_helmet", "fg": 60 },
+          { "id": "overlay_male_worn_wyvern_skull_helmet", "fg": 60 },
+          { "id": "overlay_female_worn_wyvern_skull_helmet_advanced", "fg": 62 },
+          { "id": "overlay_male_worn_wyvern_skull_helmet_advanced", "fg": 63 }
+        ],
+        "sprite_width": 32,
+        "sprite_height": 64,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -32
+      },
+      {
+        "file": "mod_tileset\\UltimateCataclysm\\normal.png",
+        "//": "range 73 to xx",
+        "tiles": [
+          { "id": "wyvern_skull", "fg": 72 },
+          { "id": "wyvern_skull_chiseled", "fg": 73 },
+          { "id": "wyvern_skull_helmet", "fg": 74 },
+          { "id": "wyvern_skull_helmet_advanced", "fg": 75 },
+          { "id": "wyvern_scythe", "fg": 76 },
+          { "id": "wyvern_spear", "fg": 77 },
+          { "id": "trenchcoat_wyvern", "fg": 78 },
+          { "id": "pants_wyvern", "fg": 79 },
+          { "id": "poncho_wyvern", "fg": 80 },
+          { "id": "poncho_wyvern_padded", "fg": 81 }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,814 @@
+[
+  {
+    "id": "wyvern_belt_notools",
+    "type": "ARMOR",
+    "copy-from": "survivor_belt_notools",
+    "name": { "str": "wyvern belt" },
+    "description": "A custom-built leather belt covered with pouches, with a sheath to carry a smaller blade, a holster to carry a pistol and a loop for holding larger tools.  Durable and carefully crafted to be comfortable to wear.  Activate to sheathe/draw a weapon.  Fire resistant.",
+    "//": "additional 385 weight + 565 volume",
+    "weight": "1934 g", 
+    "volume": "2815 ml",
+    "price": "0 USD",
+    "price_postapoc": "250 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "material_thickness": 2.5,
+    "pocket_data": [
+      {
+        "holster": true,
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "70 cm",
+        "moves": 20,
+        "flag_restriction": [ "SHEATH_KNIFE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "13 cm",
+        "moves": 50,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "magazine_well": "350 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "min_item_volume": "300 ml",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "30 cm",
+        "moves": 50
+      },
+      {
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "90 cm",
+        "moves": 50,
+        "flag_restriction": [ "BELT_CLIP" ],
+        "transparent": true
+      }
+    ],
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_duffel_bag",
+    "type": "ARMOR",
+    "copy-from": "survivor_duffel_bag",
+    "name": { "str": "wyvern duffel bag" },
+    "description": "A custom-built heavy duffel bag.  Durable and carefully crafted to hold as much stuff as possible.  Fire resistant.",
+    "//": "additional 250 weight + 1965 volume",
+    "weight": "1250 g",
+    "volume": "9840 ml",
+    "price": "0 USD",
+    "price_postapoc": "425 cent",
+    "material": [ 
+      "canvas",
+      "kevlar",
+      "mut_scales_fireproof"
+    ],
+    "color": "pink",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "38 L",
+        "max_contains_weight": "60 kg",
+        "max_item_length": "60 cm",
+        "magazine_well": "7500 ml",
+        "moves": 300,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "//": "dedicated tool loops. either a daisy chain, hooking to compression straps, or ice axe loop",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 300,
+        "extra_encumbrance": 1,
+        "description": "Secured under compression straps or with a tool loop.",
+        "ripoff": 5,
+        "transparent": true
+      },
+      {
+        "//": "dedicated tool loops. either a daisy chain, hooking to compression straps, or ice axe loop",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 300,
+        "extra_encumbrance": 1,
+        "description": "Secured under compression straps or with a tool loop.",
+        "ripoff": 5,
+        "transparent": true
+      },
+      {
+        "//": "items slipped under the top of a duffelbag not well secured",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 80,
+        "extra_encumbrance": 5,
+        "description": "Tucked under the carry handles.",
+        "ripoff": 1,
+        "transparent": true
+      }
+    ],
+    "warmth": 10,
+    "armor": [
+      {
+        "encumbrance": [ 8, 30 ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "coverage": 80,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_hanging_back" ]
+      }
+    ]
+    },
+  {
+    "id": "wyvern_pack",
+    "type": "ARMOR",
+    "copy-from": "survivor_pack",
+    "name": { "str": "wyvern backpack" },
+    "description": "A custom-built backpack.  Durable and carefully crafted to hold as much stuff as possible.  Fire resistant.",
+    "//": "additional 150 weight + 1310 volume",
+    "weight": "750 g",
+    "volume": "6560 ml",
+    "price": "0 USD",
+    "price_postapoc": "350 USD",
+    "material": [
+      "leather",
+      "canvas",
+      "mut_scales_fireproof"
+    ],
+    "color": "pink",
+    "warmth": 6,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "30 L",
+        "max_contains_weight": "32 kg",
+        "max_item_length": "50 cm",
+        "magazine_well": "5 L",
+        "moves": 300,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "//": "water bottle pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "510 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "24 cm",
+        "min_item_length": "18 cm",
+        "moves": 80,
+        "description": "Small pocket for a water bottle.",
+        "ripoff": 2
+      },
+      {
+        "//": "dedicated tool loops. either a daisy chain, hooking to compression straps, or ice axe loop",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 300,
+        "extra_encumbrance": 1,
+        "description": "Secured under compression straps or with a tool loop.",
+        "ripoff": 5,
+        "transparent": true
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 60 },
+        "transparent": true
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 60 },
+        "transparent": true
+      }
+    ],
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "armor": [
+      {
+        "encumbrance": [ 3, 24 ],
+        "coverage": 60,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_hanging_back" ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_rucksack",
+    "type": "ARMOR",
+    "copy-from": "survivor_rucksack",
+    "name": { "str": "wyvern rucksack" },
+    "description": "A custom-built heavy backpack.  Durable and carefully crafted to hold as much stuff as possible.  Fire resistant.",
+    "//": "additional 200 weight + 2500 volume",
+    "weight": "1000 g",
+    "volume": "12500 ml",
+    "price": "0 USD",
+    "price_postapoc": "400 USD",
+    "material": [
+      "canvas",
+      "mut_scales_fireproof"
+    ],
+    "color": "pink",
+    "warmth": 8,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "35 L",
+        "max_contains_weight": "40 kg",
+        "max_item_length": "55 cm",
+        "magazine_well": "6 L",
+        "moves": 300,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 60 },
+        "transparent": true
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 60 },
+        "transparent": true
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 60 },
+        "transparent": true
+      },
+      {
+        "//": "dedicated tool loops. either a daisy chain, hooking to compression straps, or ice axe loop",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 300,
+        "extra_encumbrance": 1,
+        "description": "Secured under compression straps or with a tool loop.",
+        "ripoff": 5,
+        "transparent": true
+      },
+      {
+        "//": "dedicated tool loops. either a daisy chain, hooking to compression straps, or ice axe loop",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "100 cm",
+        "min_item_length": "40 cm",
+        "moves": 300,
+        "extra_encumbrance": 1,
+        "description": "Secured under compression straps or with a tool loop.",
+        "ripoff": 5,
+        "transparent": true
+      }
+    ],
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "armor": [
+      {
+        "encumbrance": [ 3, 28 ],
+        "coverage": 80,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_hanging_back" ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_runner_pack",
+    "type": "ARMOR",
+    "copy-from": "survivor_runner_pack",
+    "name": { "str": "wyvern runner pack" },
+    "description": "A custom-built lightweight runner pack.  Durable and carefully crafted to hold as much stuff as possible.  Fire resistant.",
+    "//": "additional 110 weight + 1050 volume",
+    "weight": "550 g",
+    "volume": "5250 ml",
+    "price": "0 USD",
+    "price_postapoc": "350 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "warmth": 2,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "16 kg",
+        "max_item_length": "40 cm",
+        "magazine_well": "4 L",
+        "moves": 250,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "armor": [
+      {
+        "encumbrance": [ 3, 12 ],
+        "coverage": 60,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_hanging_back" ],
+        "material": [
+          { "type": "canvas", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_rig",
+    "type": "ARMOR",
+    "copy-from": "survivor_rig",
+    "name": { "str": "wyvern distributed rigging" },
+    "description": "A custom-built lightweight set of weight distributing pouches on the thighs and stomach.  This configuration is designed to be worn with a military harness or tactical vest.  Fire resistant.",
+    "//": "additional 110 weight + 750 volume",
+    "weight": "550 g",
+    "volume": "3750 ml",
+    "price": "0 USD",
+    "price_postapoc": "350 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "6 kg",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true,
+        "max_item_length": "30 cm",
+        "description": "Upper leg pouch."
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "6 kg",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true,
+        "max_item_length": "30 cm",
+        "description": "Upper leg pouch."
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "3 kg",
+        "moves": 120,
+        "watertight": true,
+        "fire_protection": true,
+        "description": "Tactical fanny pack."
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "3 kg",
+        "moves": 200,
+        "watertight": true,
+        "fire_protection": true,
+        "description": "Back tactical fanny pack."
+      }
+    ],
+    "warmth": 1,
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_legrig",
+    "type": "ARMOR",
+    "copy-from": "legrig",
+    "name": { "str": "wyvern drop leg pouch", "str_pl": "wyvern drop leg pouches" },
+    "description": "A pouch that can be worn on the thighs using buckled straps.  This variety is favored by the military.  Fire resistant.",
+    "//": "additional 25 weight + 130 volume",
+    "weight": "127 g",
+    "volume": "655 ml",
+    "price": "0 USD",
+    "price_postapoc": "22 USD 5 cent",
+    "material": [ "mut_scales_fireproof" ],
+    "sided": true,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "2250 ml",
+        "max_contains_weight": "4500 g",
+        "max_item_length": "30 cm",
+        "magazine_well": "500 ml",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_legrig_wetsuit",
+    "type": "ARMOR",
+    "copy-from": "legrig_wetsuit",
+    "name": { "str": "pair of wyvern diving pouches", "str_pl": "pairs of wyvern diving pouches" },
+    "description": "A set of pouches that can be worn on the thighs using buckled neoprene rig.  This variety is favored by the divers.  Fire resistant.",
+    "//": "additional 75 weight + 285 volume",
+    "weight": "380 g",
+    "volume": "1335 ml",
+    "price": "0 USD",
+    "price_postapoc": "35 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "//3": "Two large pockets separated into four, two small zipper pockets on flaps, four bungee loops.",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1650 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "32 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1650 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "32 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1650 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "32 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1650 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "32 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "500 g",
+        "max_item_length": "19 cm",
+        "moves": 130,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "500 g",
+        "max_item_length": "19 cm",
+        "moves": 130,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "70 cm",
+        "extra_encumbrance": 2,
+        "moves": 50,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "70 cm",
+        "extra_encumbrance": 2,
+        "moves": 50,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "70 cm",
+        "extra_encumbrance": 2,
+        "moves": 50,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1000 g",
+        "max_item_length": "70 cm",
+        "extra_encumbrance": 2,
+        "moves": 50,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      }
+    ],
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "armor": [
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 2,
+        "volume_encumber_modifier": 0.2,
+        "specifically_covers": [ "leg_hip_l", "leg_hip_r" ]
+      },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 40,
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_leg_bag",
+    "type": "ARMOR",
+    "copy-from": "leg_bag",
+    "name": { "str": "wyvern drop leg bag" },
+    "//": "additional 65 weight + 385 volume",
+    "description": "A bag that can be worn on the thighs and hips using adjustable buckled straps.  Provides some extra storage for outdoor activities.  Fire resistant.",
+    "weight": "313 g",
+    "volume": "1935 ml",
+    "price": "0 USD",
+    "price_postapoc": "35 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "20 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "25 cm",
+        "moves": 120,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "material_thickness": 2.5,
+    "warmth": 2,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_leg_small_bag",
+    "type": "ARMOR",
+    "copy-from": "wyvern_armrig",
+    "name": { "str": "wyvern small leg purse" },
+    "description": "A small purse that can be worn on the upper leg using buckled straps, easier to use than on the arm.  For those who want to wear a dress without pockets while carrying their phone and money.  Use it to adjust it to fit your arm.  Fire resistant.",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "16 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true,
+        "//": "Less moves as the arm version since grabing things wrapped around your legs is easier."
+      }
+    ],
+    "armor": [
+      {
+        "encumbrance": 1,
+        "volume_encumber_modifier": 0.35,
+        "coverage": 50,
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_r", "leg_upper_l" ]
+      }
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "You adjust your %s to wear it on your arm.",
+      "target": "wyvern_armrig",
+      "menu_text": "Adjust on the arm"
+    }
+  },
+  {
+    "id": "wyvern_armrig",
+    "type": "ARMOR",
+    "copy-from": "armrig",
+    "name": { "str": "wyvern armband pouch", "str_pl": "wyvern armband pouches" },
+    "description": "A small pouch that can be worn on the upper arm using buckled straps.  This is a favored item among sports & camping enthusiasts.  Use it to adjust it to fit your leg.  Fire resistant.",
+    "//": "additional 50 weight + 135 volume",
+    "weight": "255 g",
+    "volume": "685 ml",
+    "price": "0 USD",
+    "price_postapoc": "35 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "16 cm",
+        "moves": 200,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "use_action": {
+      "type": "transform",
+      "msg": "You adjust your %s to wear it on your leg.",
+      "target": "wyvern_leg_small_bag",
+      "menu_text": "Adjust on the leg"
+    }
+  },
+  {
+    "id": "wyvern_ankle_wallet_pouch",
+    "type": "ARMOR",
+    "copy-from": "ankle_wallet_pouch",
+    "name": { "str": "wyvern ankle wallet pouch", "str_pl": "wyvern ankle wallet pouches" },
+    "description": "A small concealed wallet pouch worn on the ankle.  If you strap it under your clothes, it can help you keep your wallet hidden and safe.  Fire resistant.",
+    "//": "additional 15 weight + 35 volume",
+    "weight": "75 g",
+    "volume": "185 ml",
+    "price": "0 cent",
+    "price_postapoc": "15 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "600 g",
+        "max_item_length": "9 cm",
+        "moves": 150,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_pouch",
+    "type": "ARMOR",
+    "copy-from": "leather_pouch",
+    "name": { "str": "wyvern pouch", "str_pl": "wyvern pouches" },
+    "description": "A bag stitched together from leather scraps.  Doesn't hold an awful lot but is easy to wear.  Fire resistant.",
+    "//": "additional 60 weight + 125 volume",
+    "weight": "310 g",
+    "volume": "652 ml",
+    "price": "0 USD",
+    "price_postapoc": "25 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "20 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  }
+]

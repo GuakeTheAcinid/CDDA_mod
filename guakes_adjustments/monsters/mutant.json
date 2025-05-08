@@ -1,0 +1,101 @@
+[
+    {
+      "id": "mon_ga_mutant_wyvern",
+      "type": "MONSTER",
+      "name": { "str": "wyvern mutant" },
+      "description": "A mutated winged purple-scaled test subject with long thick tail ending with a large bone scythe, smoothly walking on all fours. Their back and front are plated with bone, and head is solid covered under a thick skull with two long straight horns and razor sharp fangs, but lack of eye sockets.",
+      "symbol": "M",
+      "color": "pink",
+      "bodytype": "bird",
+      "species": [ "MUTANT" ],
+      "default_faction": "lab_mutant",
+      "volume": "240 L",
+      "weight": "280 kg",
+      "hp": 210,
+      "//": "wyvern is too coward (doesn't even attack back)",
+      "aggression": -2,
+      "morale": 8,
+      "aggro_character": false,
+      "regen_morale": true,
+      "regenerates": 1,
+      "speed": 115,
+      "melee_skill": 9,
+      "melee_dice": 5,
+      "melee_dice_sides": 3,
+      "special_attacks": [
+        {
+          "type": "leap",
+          "cooldown": 5,
+          "max_range": 5,
+          "allow_no_target": true,
+          "message": "The wyvern makes a powerful swing with wings and jumps at several meters!"
+        },
+        {
+          "id": "scratch",
+          "move_cost": 110,
+          "cooldown": 4,
+          "min_mul": 1.5,
+          "max_mul": 3.5
+        },
+        {
+          "type": "bite",
+          "cooldown": 7,
+          "damage_max_instance": [ { "damage_type": "stab", "amount": 18, "armor_multiplier": 0.7 } ]
+        },
+        {
+          "id": "impale",
+          "move_cost": 110,
+          "cooldown": 10,
+          "min_mul": 3,
+          "max_mul": 5
+        },
+        {
+          "type": "spell",
+          "spell_data": { "id": "FIRE_SPIT", "min_level": 2},
+          "cooldown": 30,
+          "monster_message": "The wyvern spits a sticky liquid on the large area which start to blaze!",
+          "condition": { "math": [ "u_hp('ALL')", "<" ,"100" ] }
+        },
+        [ "EAT_CARRION", 120 ],
+        [ "EAT_FOOD", 120 ],
+        [ "BROWSE", 120 ]
+      ],
+      "dodge": 6,
+      "bleed_rate": 50,
+      "//2": "Actually doesn't see anything, but their sences let it to track target location in a short range",
+      "vision_day": 4,
+      "vision_night": 4,
+      "stomach_size": 1500,
+      "path_settings": { "max_dist": 50, "avoid_traps": true, "avoid_sharp": true },
+      "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_skeleton" ],
+      "weakpoint_sets": [ "wps_bone_armor" ],
+      "harvest": "mutant_wyvern_human",
+      "dissect": "dissect_wyvern_sample_large",
+      "death_drops": "mon_mutant_experimental_death_drops",
+      "anger_triggers": [ "HOSTILE_SEEN", "FRIEND_ATTACKED", "PLAYER_WEAK", "SOUND" ],
+      "fear_triggers": [ "HURT" ],
+      "zombify_into": "mon_meat_cocoon_med",
+      "flags": [
+        "SEES",
+        "HEARS",
+        "SMELLS",
+        "KEENNOSE",
+        "GOODHEARING",
+        "WARM",
+        "CLIMBS",
+        "FIREPROOF",
+        "HAS_MIND",
+        "SWARMS",
+        "GROUP_MORALE",
+        "BASHES",
+        "GROUP_BASH",
+        "PATH_AVOID_DANGER",
+        "EATS",
+        "PUSH_MON",
+        "CAN_OPEN_DOORS",
+        "PRIORITIZE_TARGETS",
+        "CORNERED_FIGHTER"
+      ],
+      "armor": { "bash": 25, "cut": 50, "stab": 40, "bullet": 50, "heat": 50, "electric": 2, "acid": 12 }
+    }
+]

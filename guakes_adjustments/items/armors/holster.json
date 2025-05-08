@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wyvern_back_holster",
+    "type": "ARMOR",
+    "copy-from": "back_holster",
+    "name": { "str": "wyvern back holster" },
+    "description": "A leather holster, big enough for a rifle or other large gun.  Designed to be strapped to the back.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "240 g",
+    "volume": "1250 ml",
+    "price": "0 USD",
+    "price_postapoc": "175 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_baldric_holster",
+    "type": "ARMOR",
+    "copy-from": "baldric_holster",
+    "name": { "str": "wyvern baldric holster" },
+    "description": "A leather harness which can hold up to six pistol-sized guns in total, available for quick drawing.  Historically, similar harnesses were used by pirates to carry multiple loaded flintlock pistols at once, as reloading them is a lengthy process.  Activate to holster/draw a gun.   Fire resistant.",
+    "weight": "1320 g",
+    "volume": "3 L",
+    "price": "0 USD",
+    "price_postapoc": "250 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_bootstrap",
+    "type": "ARMOR",
+    "copy-from": "bootstrap",
+    "name": { "str": "wyvern ankle holster" },
+    "description": "A small concealed holster worn on the ankle.  It is awkward to use without practice.  Activate to holster/draw a small pistol.  Fire resistant.",
+    "weight": "200 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "price_postapoc": "70 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "pocket_data": [
+      {
+        "magazine_well": "200 ml",
+        "pocket_type": "CONTAINER",
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "400 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "20 cm",
+        "moves": 150
+      }
+    ]
+  },
+  {
+    "id": "wyvern_holster",
+    "type": "ARMOR",
+    "copy-from": "holster",
+    "name": { "str": "wyvern holster" },
+    "description": "A leather strap worn on the hip for holding pistol-sized guns.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "220 g",
+    "volume": "500 ml",
+    "price": "0 USD",
+    "price_postapoc": "70 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_western_holster",
+    "type": "ARMOR",
+    "copy-from": "western_holster",
+    "name": { "str": "wyvern western gun belt" },
+    "description": "A Western-style gun belt as worn by cowboys and gunfighters in the movies and on TV. Has loops across the back to hold spare ammo.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "260 g",
+    "volume": "550 ml",
+    "price_postapoc": "70 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "armor": [
+      {
+        "covers": [ "torso" ],
+        "coverage": 50,
+        "specifically_covers": [ "torso_waist" ],
+        "encumbrance": [ 1, 1 ],
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "steel", "covered_by_mat": 10, "thickness": 0.5 }
+        ]
+      },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 40,
+        "encumbrance": [ 2, 3 ],
+        "specifically_covers": [ "leg_hip_r", "leg_hip_l" ]
+      }
+    ],
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_sholster",
+    "copy-from": "wyvern_holster",
+    "type": "ARMOR",
+    "name": { "str": "wyvern fast draw holster" },
+    "description": "A comfortable quick-draw holster for small guns.  Activate to holster/draw a gun.  Fire resistant.",
+    "price_postapoc": "70 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "pocket_data": [
+      {
+        "magazine_well": "200 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "490 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "250 mm",
+        "moves": 30
+      }
+    ],
+    "use_action": { "type": "holster" },
+    "armor": [
+      {
+        "encumbrance": [ 1, 2 ],
+        "coverage": 5,
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_hip_r", "leg_hip_l" ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_shoulder_holster",
+    "copy-from": "wyvern_holster",
+    "type": "ARMOR",
+    "name": { "str": "wyvern shoulder holster" },
+    "description": "A comfortable quick-draw holster for larger pistols.  One side holsters a gun, and the other side holds two magazines.  Activate to holster/draw a gun.  Fire resistant.",
+    "price_postapoc": "70 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "pocket_data": [
+      {
+        "magazine_well": "200 ml",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "650 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "250 mm",
+        "moves": 30,
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 40,
+        "watertight": true,
+        "fire_protection": true,
+        "flag_restriction": [ "MAG_COMPACT" ],
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+    "use_action": { "type": "holster" },
+    "extend": { "flags": [ "SUPER_FANCY" ] },
+    "armor": [ { "encumbrance": 1, "coverage": 5, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
+  },
+  {
+    "id": "wyvern_side_double_holster",
+    "type": "ARMOR",
+    "copy-from": "side_double_holster",
+    "name": { "str": "wyvern side-by-side double holster" },
+    "description": "Two holsters attached together by a strap, right next to each other.  The placement means that drawing guns out of either one is slower than a regular holster.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "500 g",
+    "volume": "1000 ml",
+    "price": "0 USD",
+    "price_postapoc": "170 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_FB_double_holster",
+    "type": "ARMOR",
+    "copy-from": "FB_double_holster",
+    "name": { "str": "wyvern front-to-back double holster" },
+    "description": "Two holsters attached together by a strap, one in front of the other.  The placement means that drawing a gun out of the front holster is slower than the other holster.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "500 g",
+    "volume": "1000 ml",
+    "price": "0 USD",
+    "price_postapoc": "170 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_XL_holster",
+    "type": "ARMOR",
+    "copy-from": "XL_holster",
+    "name": { "str": "wyvern large holster" },
+    "description": "A belt holster consisting of a loop and strap intended for use with larger firearms.  Slightly more cumbersome than a standard holster due to the straps that hold it flat against your leg.  Activate to holster/draw a gun.  Fire resistant.",
+    "weight": "320 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "price_postapoc": "125 USD",
+    "material": [ "mut_scales_fireproof" ],
+    "color": "pink",
+    "sided": true,
+    "material_thickness": 2.5,
+    "use_action": { "type": "holster" },
+    "extend": { "flags": [ "SUPER_FANCY" ] }
+  },
+  {
+    "id": "wyvern_XS_holster",
+    "type": "ARMOR",
+    "copy-from": "wyvern_holster",
+    "name": { "str": "wyvern XS holster" },
+    "price": "0 USD",
+    "extend": { "flags": [
+      "SUPER_FANCY",
+      "UNDERSIZE"
+    ] }
+  }
+]

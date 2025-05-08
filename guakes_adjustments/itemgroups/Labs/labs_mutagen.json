@@ -1,0 +1,9 @@
+[
+    {
+      "id": "rare_mutation_books",
+      "type": "item_group",
+      "subtype": "distribution",
+      "copy-from": "rare_mutation_books",
+      "extend": { "entries": [ { "item": "recipe_wyvern", "prob": 50 } ] }
+    }
+]

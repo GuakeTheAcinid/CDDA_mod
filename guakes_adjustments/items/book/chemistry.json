@@ -1,0 +1,22 @@
+[
+    {
+      "id": "recipe_wyvern",
+      "type": "BOOK",
+      "category": "manuals",
+      "name": { "str": "lab journal-Surina", "str_pl": "lab journals-Surina" },
+      "description": "This logbook details some varieties of mutagenic experiments. The logbook lacks of few chapters and seems to be unverified, but still contains valuable information on an \"Assault\" type of mutagen and its development.",
+      "weight": "50 g",
+      "volume": "500 ml",
+      "price": "1 kUSD 250 USD",
+      "price_postapoc": "20 USD",
+      "material": [ "paper" ],
+      "symbol": "?",
+      "color": "light_green",
+      "skill": "chemistry",
+      "required_level": 6,
+      "max_level": 7,
+      "intelligence": 13,
+      "time": "45 m",
+      "fun": -2
+    }
+]

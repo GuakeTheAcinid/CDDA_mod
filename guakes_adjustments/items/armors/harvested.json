@@ -1,0 +1,736 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "wyvern_scythe",
+    "name": { "str_sp": "wyvern scythe" },
+    "description": "Freshly harvested bone scythe of a mutant. Large in size and heavy, however evry sturdy and sharp.",
+    "weight": "14687 g",
+    "color": "white",
+    "symbol": "j",
+    "material": [ "wyvern_external_bone" ],
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "volume": "11250 ml",
+    "longest_side": "110 cm",
+    "to_hit": {
+      "grip": "bad",
+      "length": "long",
+      "surface": "any",
+      "balance": "clumsy"
+    },
+    "qualities": [
+      [ "CUT", 1 ],
+      [ "BUTCHER", -24 ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "NONCONDUCTIVE",
+      "ALWAYS_TWOHAND"
+    ],
+    "weapon_category": [ "CLUB" ],
+    "price": "0 USD",
+    "price_postapoc": "15 USD",
+    "category": "weapons",
+    "melee_damage": {
+      "bash": 10,
+      "cut": 15
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "wyvern_spear",
+    "name": {
+      "str_sp": "bone spear"
+    },
+    "description": "Large pole with a chiseled scythe of a mutant in place of a blade. Much of unessential mass of the bone was removed. Still quite heavy, but now well balanced.",
+    "//": "Additional 4084 ml (32059 g) by steel pole (hollow (outR = 3, inR = 2)). Removed about 30% (3375ml 4406g) of original bone for fastenings and lightness.",
+    "//2": "Bruh. pipe spear is better fitted in-game (additional pipe-spear {1140ml 2120g} instead of calculated steel pole parameters).",
+    "//3": "uhh i don't give a fuck now. there was 12401 g and 9015 ml. It's a typical polearm with wooden pole.",
+    "//4": "weight and volume are fucked up anyway",
+    "weight": "3634 g",
+    "color": "light_gray",
+    "symbol": "/",
+    "material": [ "wyvern_external_bone", "wood" ],
+    "techniques": [
+      "WIDE",
+      "WBLOCK_1",
+      "SWEEP"
+    ],
+    "volume": "3520 ml",
+    "longest_side": "210 cm",
+    "to_hit": {
+      "grip": "weapon",
+      "length": "long",
+      "surface": "line",
+      "balance": "neutral"
+    },
+    "qualities": [
+      [ "CUT", 1 ],
+      [ "BUTCHER", -35 ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "REACH_ATTACK",
+      "NONCONDUCTIVE",
+      "POLEARM",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ],
+    "weapon_category": [ "HOOKING_WEAPONRY", "POLEARMS" ],
+    "price": "0 USD",
+    "price_postapoc": "75 USD",
+    "category": "weapons",
+    "melee_damage": {
+      "bash": 25,
+      "stab": 45
+    },
+    "//5": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "ITEM_ATTACK_SPEED", "add": -250 }, { "value": "MELEE_STAMINA_CONSUMPTION", "add": -730 } ] } ] }
+  },
+  {
+    "id": "wyvern_skull",
+    "type": "ARMOR",
+    "name": { "str": "wyvern skull", "str_pl": "wyvern skulls" },
+    "description": "Freshly harvested solid skull of a mutated human in form of one of a lizard. It's very durable, but lacks of eye sockets and uncomfortable to wear.",
+    "//": "Weights in this game are fucking broken. Fuck it.",
+    "//2": "WEIGHTS WAS 20508g",
+    "weight": "13577 g",
+    "volume": "16 L",
+    "longest_side": "132 cm",
+    "price": "0 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "mut_bone", "wyvern_external_bone" ],
+    "symbol": "@",
+    "color": "white",
+    "qualities": [ [ "CUT", 1] ],
+    "flags": [
+      "BLIND",
+      "STURDY",
+      "FANCY",
+      "RAINPROOF",
+      "WATER_FRIENDLY",
+      "OUTER",
+      "OVERSIZE",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "encumbrance": 65,
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown" ]
+      },
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_r", "head_ear_l" ]
+      },
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 }
+        ],
+        "coverage": 60,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat", "head_nape" ]
+      },
+      {
+        "material": [
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "coverage": 100,
+        "covers": [ "eyes" ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_skull_chiseled",
+    "type": "ARMOR",
+    "copy-from": "wyvern_skull",
+    "name": { "str": "chiseled wyvern skull", "str_pl": "chiseled wyvern skulls" },
+    "description": "A robust skull of a mutated human in form of one of a lizard. It's very durable, but uncomfortable to wear. Now has two eye sockets to see. If that creature had such…",
+    "//": "Eye sockets have about 3-4cm radius: 291ml (380g)",
+    "//2": "Weights in this game are fucking broken. Fuck it.",
+    "//3": "WEIGHTS WAS 20508g",
+    "weight": "13197 g",
+    "volume": "15709 ml",
+    "price_postapoc": "7 USD",
+    "delete": { "flags": [ "BLIND" ] },
+    "armor": [
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "encumbrance": 65,
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown" ]
+      },
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_r", "head_ear_l" ]
+      },
+      {
+        "material": [
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 15 }
+        ],
+        "coverage": 60,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat", "head_nape" ]
+      },
+      {
+        "material": [
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "coverage": 20,
+        "covers": [ "eyes" ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_skull_helmet",
+    "type": "ARMOR",
+    "copy-from": "wyvern_skull_chiseled",
+    "name": { "str": "wyvern skull helmet", "str_pl": "wyvern skull helmets" },
+    "description": "A robust skull of a mutated human in form of one of a lizard, turned into a kind of a helmet with scaled hide covering whole head to shoulders.",
+    "//": "Additional 3251ml (3902g) by hide. Removed about 1200ml (1567g) from internal space of the skull",
+    "//2": "Weights in this game are fucking broken. Fuck it.",
+    "//3": "WEIGHTS WAS 22843g",
+    "weight": "14715 g",
+    "volume": "17760 ml",
+    "price_postapoc": "120 USD",
+    "material": [ "mut_bone", "wyvern_external_bone", "mut_scales_fireproof" ],
+    "color": "pink",
+    "extend": { "flags": [ "SUPER_FANCY", "PADDED", "SOFT", "UNRESTRICTED" ] },
+    "delete": { "flags": [ "FANCY" ] },
+    "environmental_protection": 4,
+    "armor": [
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "encumbrance": 35,
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "coverage": 100,
+        "encumbrance": 10,
+        "covers": [ "mouth" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_r", "head_ear_l" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 70, "thickness": 8 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat", "head_nape" ]
+      },
+      {
+        "material": [
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "coverage": 20,
+        "covers": [ "eyes" ]
+      }
+    ]
+  },
+  {
+    "id": "wyvern_skull_helmet_advanced",
+    "type": "TOOL_ARMOR",
+    "copy-from": "wyvern_skull_helmet",
+    "name": { "str": "advanced wyvern skull helmet", "str_pl": "advanced wyvern skull helmets" },
+    "description": "A robust skull of a mutated human in form of one of a lizard, turned into a kind of a helmet with scaled hide covering whole head to shoulders. Protects eyes and has a gas mask integrated under palatine bone.",
+    "//": "Additional about 1250lm 680g by gasmask mechanism.",
+    "//2": "Weights in this game are fucking broken. Fuck it.",
+    "//3": "WEIGHTS WAS 23523g",
+    "weight": "15395 g",
+    "volume": "19010 ml",
+    "price_postapoc": "150 USD",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "GASFILTER_MED" ],
+        "default_magazine": "gasfilter_med"
+      }
+    ],
+    "ammo": "gasfilter_m",
+    "use_action": [ "GASMASK_ACTIVATE" ],
+    "tick_action": [ "GASMASK" ],
+    "material": [ "mut_bone", "wyvern_external_bone", "mut_scales_fireproof", "hard_plastic_transp" ],
+    "extend": { "flags": [ "SUN_GLASSES", "SLEEP_IGNORE" ] },
+    "environmental_protection": 5,
+    "environmental_protection_with_filter": 20,
+    "armor": [
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "encumbrance": 35,
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead", "head_crown" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 },
+          { "type": "wyvern_external_bone", "covered_by_mat": 100, "thickness": 25 }
+        ],
+        "coverage": 100,
+        "encumbrance": 15,
+        "covers": [ "mouth" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 100, "thickness": 8 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_r", "head_ear_l" ]
+      },
+      {
+        "material": [
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "mut_bone", "covered_by_mat": 70, "thickness": 8 }
+        ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat", "head_nape" ]
+      },
+      {
+        "material": [
+          { "type": "wyvern_external_bone", "covered_by_mat": 20, "thickness": 25 },
+          { "type": "hard_plastic_transp", "covered_by_mat": 100, "thickness": 5 }
+        ],
+        "coverage": 100,
+        "encumbrance": 15,
+        "covers": [ "eyes" ]
+      }
+    ]
+  },
+  {
+    "id": "poncho_wyvern",
+    "type": "ARMOR",
+    "name": { "str": "wyvern poncho" },
+    "description": "A simple garment made out of glistering mutant hide worn over the torso and upper arms.",
+    "//": "Weights in this game are fucking broken. Fuck it.",
+    "//2": "WEIGHTS WAS 3750g",
+    "weight": "2438 g",
+    "volume": "3125 ml",
+    "longest_side": "32 cm",
+    "price": "0 USD",
+    "price_postapoc": "35 USD",
+    "to_hit": -1,
+    "material": [ "mut_scales_fireproof" ],
+    "symbol": "[",
+    "looks_like": "cloak",
+    "color": "pink",
+    "warmth": 35,
+    "material_thickness": 2.5,
+    "environmental_protection": 5,
+    "flags": [
+      "BELTED",
+      "OVERSIZE",
+      "FANCY",
+      "RAINPROOF",
+      "WATER_FRIENDLY",
+      "STURDY"
+    ],
+    "armor": [
+      {
+        "encumbrance": 5,
+        "coverage": 85,
+        "covers": [ "torso" ]
+      },
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5,
+        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 85,
+        "encumbrance": 5,
+        "specifically_covers": [ "arm_upper_r", "arm_upper_l" ],
+        "layers": [ "BELTED" ]
+      }
+    ]
+  },
+  {
+    "id": "poncho_wyvern_padded",
+    "type": "ARMOR",
+    "name": { "str": "padded wyvern poncho" },
+    "description": "A kevlar-padded garment made out of glistering mutant hide worn over the torso and upper arms.",
+    "copy-from": "poncho_wyvern",
+    "//": "Addinional 1625g and 1650ml by kevlar",
+    "weight": "4063 g",
+    "volume": "4775 ml",
+    "price_postapoc": "55 USD",
+    "material": [ "mut_scales_fireproof", "kevlar" ],
+    "material_thickness": 4,
+    "environmental_protection": 5,
+    "flags": [
+      "BELTED",
+      "OVERSIZE",
+      "FANCY",
+      "RAINPROOF",
+      "WATER_FRIENDLY",
+      "STURDY"
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "encumbrance": 5,
+        "coverage": 85,
+        "covers": [ "torso" ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5,
+        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 85,
+        "encumbrance": 5,
+        "specifically_covers": [ "arm_upper_r", "arm_upper_l" ],
+        "layers": [ "BELTED" ]
+      }
+    ]
+  },
+  {
+    "id": "trenchcoat_wyvern",
+    "type": "ARMOR",
+    "name": { "str": "wyvern trenchcoat" },
+    "description": "A thick trenchcoat out of glistering mutant hide, lined with pockets.  Great for storage.",
+    "//": "Weights in this game are fucking broken. Fuck it.",
+    "//2": "WEIGHTS WAS 6300g",
+    "//3": "Added kevlar. Volume was 5250ml, Weight: 4095g",
+    "weight": "4095 g",
+    "volume": "8750 ml",
+    "price": "0 USD",
+    "price_postapoc": "75 USD",
+    "material": [ "mut_scales_fireproof", "kevlar" ],
+    "symbol": "[",
+    "looks_like": "trenchcoat",
+    "color": "pink",
+    "armor": [
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": [ 5, 8 ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "coverage": 100,
+        "encumbrance": [ 0, 0 ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": [ 5, 5 ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_hip_l", "leg_hip_r" ],
+        "coverage": 90,
+        "encumbrance": [ 3, 4 ]
+      },
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "coverage": 80,
+        "encumbrance": [ 0, 0 ]
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "3 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "31 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "3 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "31 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "25 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "25 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "13 cm",
+        "moves": 120,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "13 cm",
+        "moves": 120,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "warmth": 30,
+    "material_thickness": 4,
+    "environmental_protection": 5,
+    "flags": [
+      "POCKETS",
+      "SUPER_FANCY",
+      "OUTER",
+      "RAINPROOF",
+      "WATER_FRIENDLY",
+      "HOOD",
+      "COLLAR",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "pants_wyvern",
+    "type": "ARMOR",
+    "name": { "str_sp": "wyvern pants" },
+    "description": "A pair of purple pants out of glistering mutant hide.  Very tough, but cumbersome and without much storage.",
+    "//": "Weights in this game are fucking broken. Fuck it.",
+    "//2": "WEIGHTS WAS 3000g",
+    "//3": "Added kevlar. Volume was 2500ml, Weight: 1950g",
+    "weight": "3000 g",
+    "volume": "4000 ml",
+    "price": "0 USD",
+    "price_postapoc": "35 USD 50 cent",
+    "material": [ "mut_scales_fireproof", "kevlar" ],
+    "symbol": "[",
+    "looks_like": "pants",
+    "color": "pink",
+    "armor": [
+      {
+        "material": [
+          { "type": "kevlar", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "mut_scales_fireproof", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "encumbrance": [ 7, 10 ],
+        "coverage": 100,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "21 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "21 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "moves": 80,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "13 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "13 cm",
+        "moves": 100,
+        "watertight": true,
+        "fire_protection": true
+      }
+    ],
+    "warmth": 25,
+    "material_thickness": 2.5,
+    "environmental_protection": 5,
+    "flags": [
+      "SUPER_FANCY",
+      "RAINPROOF",
+      "WATER_FRIENDLY",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "hood_wyvern",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "wyvern hood" },
+    "description": "A customized armored Mutant hide and Kevlar hood, strong and durable.",
+    "weight": "1220 g",
+    "volume": "1500 ml",
+    "price": "0 USD",
+    "price_postapoc": "70 USD",
+    "to_hit": -1,
+    "material": [ "kevlar_layered", "mut_scales_fireproof" ],
+    "symbol": "[",
+    "looks_like": "hood_survivor",
+    "color": "pink",
+    "warmth": 25,
+    "material_thickness": 5,
+    "environmental_protection": 10,
+    "flags": [ "SUPER_FANCY", "VARSIZE", "WATERPROOF", "STURDY", "OUTER" ],
+    "armor": [ { "encumbrance": 30, "coverage": 100, "covers": [ "head" ] } ],
+    "melee_damage": { "bash": 6 }
+  },
+  {
+    "id": "xl_hood_wyvern",
+    "type": "ARMOR",
+    "copy-from": "hood_wyvern",
+    "name": { "str": "wyvern hood" },
+    "proportional": { "weight": 1.25, "volume": 1.3, "price": 1.25 },
+    "extend": { "flags": [ "OVERSIZE", "PREFIX_XL" ] }
+  },
+  {
+    "id": "xs_hood_wyvern",
+    "type": "ARMOR",
+    "copy-from": "hood_wyvern",
+    "name": { "str": "wyvern hood" },
+    "proportional": { "weight": 0.75, "volume": 0.75, "price": 0.5 },
+    "extend": { "flags": [ "UNDERSIZE", "PREFIX_XS" ] }
+  }
+]
