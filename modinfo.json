@@ -4,7 +4,7 @@
     "ident": "guakes_adjustments",
     "name": "Guake's Adjustments",
     "authors": [ "Guake The Acinid" ],
-    "description": "Add and/or rebalances some game items/features.\nCurrently adds a CBM, a mutation tree and a monster.",
+    "description": "Add and/or rebalances some game items/features. \nCurrently adds a CBM, a mutation tree and a monster.",
     "category": "rebalance",
     "dependencies": [ "dda" ]
   }
