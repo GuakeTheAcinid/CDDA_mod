@@ -21,6 +21,8 @@
           { "id": "overlay_male_mutation_TAIL_WYVERN", "fg": 11 },
           { "id": "overlay_female_mutation_HORNS_WYVERN", "fg": 12 },
           { "id": "overlay_male_mutation_HORNS_WYVERN", "fg": 13 },
+          { "id": "overlay_female_mutation_WYVERN_FEET", "fg": 14 },
+          { "id": "overlay_male_mutation_WYVERN_FEET", "fg": 15 },
           { "id": [ "overlay_female_worn_poncho_wyvern", "overlay_female_worn_poncho_wyvern_padded" ], "fg": 16 },
           { "id": [ "overlay_male_worn_poncho_wyvern", "overlay_male_worn_poncho_wyvern_padded" ], "fg": 17 },
           { "id": [ "overlay_female_wielded_wyvern_scythe", "overlay_male_wielded_wyvern_scythe" ], "fg": 18 },
