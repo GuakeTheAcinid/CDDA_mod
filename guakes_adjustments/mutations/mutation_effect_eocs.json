@@ -5,7 +5,7 @@
       "eoc_type": "EVENT",
       "required_event": "character_wears_item",
       "condition": { "compare_string": [ "integrated_wyvern_plates", { "context_val": "itype" } ] },
-      "effect": [ { "run_eoc_with": "EOC_fill_wyvern_plates_2", "alpha_talker": "avatar" } ]
+      "effect": [ { "run_eoc_with": "EOC_fill_wyvern_plates_2", "alpha_talker": "u" } ]
     },
     {
       "type": "effect_on_condition",
