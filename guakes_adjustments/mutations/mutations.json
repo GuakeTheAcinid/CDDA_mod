@@ -174,6 +174,18 @@
       "threshold_substitutes": [ "SCALES" ]
     },
     {
+      "type": "mutation",
+      "id": "STRONG_LEGS_WYVERN",
+      "name": { "str": "Strong Legs" },
+      "points": 1,
+      "vitamin_cost": 40,
+      "visibility": 1,
+      "description": "Your legs have gained muscle mass to propel you across most terrains.",
+      "types": [ "LEGS" ],
+      "enchantments": [ { "values": [ { "value": "MOVE_COST", "multiply": -0.05 } ] } ],
+      "category": [ "WYVERN" ]
+    },
+    {
       "type":"mutation",
       "id": "AFFINITYWARM",
       "name": { "str": "Heat Affinity" },
@@ -236,11 +248,11 @@
       "visibility": 4,
       "ugliness": 2,
       "mixed_effect": true,
-      "description": "The heels of your feet have shifted up off the ground in a rather animalistic fashion, reducing your carry weight limit and preventing you from wearing shoes.  These hind feet are a bad match for human arms, but could pair well with matching forepaws.",
+      "description": "The heels of your feet have shifted up off the ground in a rather animalistic fashion, reducing your carry weight limit and preventing you from wearing shoes.  As long as you're not wielding anything and you've got both wings, you're able to crawl quickly when you run or crouch.",
       "types": [ "FEET" ],
       "prereqs": [ "WINGS_WYVERN" ],
-      "category": [  "WYVERN" ],
-      "flags": [ "QUADRUPED_RUN" ],
+      "category": [ "WYVERN" ],
+      "flags": [ "QUADRUPED_RUN", "TOUGH_FEET" ],
       "wet_protection": [
         { "part": "foot_l", "neutral": 10 },
         { "part": "foot_r", "neutral": 10 }
@@ -268,7 +280,7 @@
         ]
       ],
       "enchantments": [
-        "ench_quadruped_movement_full",
+        "ench_quadruped_movement_wyvern",
         {
           "condition": {
             "and": [
@@ -279,7 +291,13 @@
           },
           "values": [ { "value": "MOVE_COST", "multiply": -0.35 } ]
         },
-        { "values": [ { "value": "CARRY_WEIGHT", "multiply": -0.1 } ] } ]
+        { "values":
+          [
+            { "value": "CARRY_WEIGHT", "multiply": -0.1 },
+            { "value": "MOVECOST_OBSTACLE_MOD", "multiply": -0.1 }
+          ]
+        }
+      ]
     },
     {
       "type": "mutation",

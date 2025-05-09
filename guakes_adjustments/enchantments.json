@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ench_quadruped_movement_wyvern",
+    "//": "Same as ench_quadruped_movement_full",
+    "type": "enchantment",
+    "condition": {
+      "and": [
+        { "u_has_trait": "WINGS_WYVERN" },
+        { "u_has_trait": "WYVERN_FEET" },
+        { "u_has_trait": "THRESH_WYVERN" },
+        { "or": [ { "u_has_move_mode": "crouch" }, { "u_has_move_mode": "run" } ] },
+        { "not": "u_can_drop_weapon" }
+      ]
+    },
+    "values": [ { "value": "MOVE_COST", "multiply": -0.15 }, { "value": "CARRY_WEIGHT", "multiply": 0.35 } ],
+    "ench_effects": [ { "effect": "natural_stance", "intensity": 1 }, { "effect": "quadruped_full", "intensity": 1 } ]
+  }
+]
