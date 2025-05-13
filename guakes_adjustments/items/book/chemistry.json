@@ -12,6 +12,7 @@
       "material": [ "paper" ],
       "symbol": "?",
       "color": "light_green",
+      "looks_like": "recipe_creepy",
       "skill": "chemistry",
       "required_level": 6,
       "max_level": 7,
