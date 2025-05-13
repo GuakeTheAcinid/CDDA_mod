@@ -10,5 +10,18 @@
     "price_postapoc": "35 USD",
     "weight": "500 g",
     "difficulty": 3
+  },
+  {
+    "id": "bio_eyes_shield_hidden",
+    "copy-from": "bionic_general_npc_usable",
+    "//": "Item for usability. Bionic transformations are... there is no such. So its just crutch.",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Eye shield CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "A bionic package installs into zygomatic a pair of lenses which can be revealed and hidden by activating them.",
+    "price": "5 kUSD 500 USD",
+    "price_postapoc": "35 USD",
+    "weight": "500 g",
+    "difficulty": 3
   }
 ]

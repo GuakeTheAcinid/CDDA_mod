@@ -1,3 +1,33 @@
 [
-  
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_swap_eye_shield_bionics",
+    "eoc_type": "ACTIVATION",
+    "effect": [
+      {
+        "if": { "u_has_bionics": "bio_eyes_shield" },
+        "then": [
+          {
+            "condition": "u_is_avatar",
+            "message": "You hide your shield lenses."
+          },
+          { "u_lose_bionic": "bio_eyes_shield" },
+          { "u_add_bionic": "bio_eyes_shield_hidden" }
+        ],
+        "else":
+        {
+          "if": { "u_has_bionics": "bio_eyes_shield_hidden" },
+          "then": [
+            {
+              "condition": "u_is_avatar",
+              "message": "You reveal your shield lenses."
+            },
+            { "u_lose_bionic": "bio_eyes_shield_hidden" },
+            { "u_add_bionic": "bio_eyes_shield" }
+          ]
+        }
+      }
+    ]
+  }
 ]
+

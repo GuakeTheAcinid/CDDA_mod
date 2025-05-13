@@ -13,7 +13,15 @@
     "material": [ "plastic", "lvl4ballisticglass" ],
     "symbol": "[",
     "color": "dark_gray",
-    "use_action": { "type": "transform", "menu_text": "Hide lenses", "target": "bio_eyes_shield_installed_hidden", "msg": "You hide your shield lenses." },
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Hide lenses",
+      "msg": "You hide your shield lenses.",
+      "effect_on_conditions": [
+        "EOC_swap_eye_shield_bionics"
+      ]
+    },
     "warmth": 0,
     "material_thickness": 1.0,
     "environmental_protection": 10,
@@ -56,7 +64,15 @@
     "material": [ "plastic", "lvl4ballisticglass" ],
     "symbol": "[",
     "color": "dark_gray",
-    "use_action": { "type": "transform", "menu_text": "Reveal lenses", "target": "bio_eyes_shield_installed", "msg": "You reveal your shield lenses." },
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Reveal lenses",
+      "msg": "You reveal your shield lenses.",
+      "effect_on_conditions": [
+        "EOC_swap_eye_shield_bionics"
+      ]
+    },
     "warmth": 0,
     "material_thickness": 1.0,
     "environmental_protection": 0,

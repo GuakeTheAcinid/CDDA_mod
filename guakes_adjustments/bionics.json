@@ -9,5 +9,17 @@
     "social_modifiers": { "intimidate": 2},
     "flags": [ "BIONIC_NPC_USABLE" ],
     "passive_pseudo_items": [ "bio_eyes_shield_installed" ]
+  },
+  {
+    "id": "bio_eyes_shield_hidden",
+    "type": "bionic",
+    "//": "Item for usability. Bionic transformations are... there is no such. So its just crutch.",
+    "name": { "str": "Eye shield" },
+    "description": "You have a pair of lenses installed into zygomatic by both sides of your skull. You can reveal and hide lenses by activating them.",
+    "occupied_bodyparts": [ [ "eyes", 1 ] ],
+    "mutation_conflicts": [ "COMPOUND_EYES", "CEPH_VISION", "CEPH_EYES", "EYEBULGE", "EYESTALKS1", "EYESTALKS2" ],
+    "social_modifiers": { "intimidate": 2},
+    "flags": [ "BIONIC_NPC_USABLE" ],
+    "passive_pseudo_items": [ "bio_eyes_shield_installed_hidden" ]
   }
 ]
