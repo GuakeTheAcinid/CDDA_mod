@@ -22,7 +22,6 @@
     ],
     "byproducts": [ [ "meal_bone", 8 ] ],
     "proficiencies": [
-      { "proficiency": "prof_millinery" },
       { "proficiency": "prof_carving" }
     ]
   },
