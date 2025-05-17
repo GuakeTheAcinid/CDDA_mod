@@ -18,7 +18,7 @@
       "aggro_character": false,
       "regen_morale": true,
       "regenerates": 1,
-      "speed": 115,
+      "speed": 135,
       "melee_skill": 9,
       "melee_dice": 5,
       "melee_dice_sides": 3,
@@ -32,36 +32,36 @@
         },
         {
           "id": "scratch",
-          "move_cost": 110,
+          "move_cost": 125,
           "cooldown": 4,
           "min_mul": 1.5,
           "max_mul": 3.5
         },
         {
           "type": "bite",
-          "cooldown": 7,
+          "cooldown": 6,
           "damage_max_instance": [ { "damage_type": "stab", "amount": 18, "armor_multiplier": 0.7 } ]
         },
         {
           "id": "impale",
-          "move_cost": 110,
-          "cooldown": 10,
+          "move_cost": 125,
+          "cooldown": 9,
           "min_mul": 3,
           "max_mul": 5
         },
         {
           "type": "spell",
           "spell_data": { "id": "FIRE_SPIT", "min_level": 2},
-          "cooldown": 30,
+          "cooldown": 35,
           "monster_message": "The wyvern spits a sticky liquid on the large area which start to blaze!",
-          "condition": { "math": [ "u_hp('ALL')", "<" ,"100" ] }
+          "condition": { "math": [ "u_hp('ALL')", "<" ,"160" ] }
         },
         [ "EAT_CARRION", 120 ],
         [ "EAT_FOOD", 120 ],
         [ "BROWSE", 120 ]
       ],
-      "dodge": 6,
-      "bleed_rate": 50,
+      "dodge": 7,
+      "bleed_rate": 30,
       "//2": "Actually doesn't see anything, but their sences let it to track target location in a short range",
       "vision_day": 4,
       "vision_night": 4,
@@ -94,7 +94,8 @@
         "PUSH_MON",
         "CAN_OPEN_DOORS",
         "PRIORITIZE_TARGETS",
-        "CORNERED_FIGHTER"
+        "CORNERED_FIGHTER",
+        "NO_BREATHE"
       ],
       "armor": { "bash": 25, "cut": 50, "stab": 40, "bullet": 50, "heat": 50, "electric": 2, "acid": 12 }
     }
