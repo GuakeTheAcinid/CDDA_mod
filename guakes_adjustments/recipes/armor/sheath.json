@@ -8,7 +8,6 @@
     "skill_used": "tailor",
     "difficulty": 5,
     "time": "20 m",
-    "autolearn": true,
     "reversible": true,
     "using": [ [ "adhesive", 1 ], [ "tailoring_wyvern_leather", 2 ], [ "clasps", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
@@ -30,7 +29,6 @@
     "difficulty": 6,
     "skills_required": [ "melee", 1 ],
     "time": "4 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 3 ], [ "clasps", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "proficiencies": [
@@ -52,7 +50,6 @@
     "skills_required": [ "throw", 1 ],
     "time": "4 h 30 m",
     "reversible": true,
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 5 ], [ "clasps", 3 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -71,7 +68,6 @@
     "difficulty": 4,
     "skills_required": [ "melee", 1 ],
     "time": "1 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ], [ "plastic_molding", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -98,7 +94,6 @@
     "difficulty": 4,
     "skills_required": [ "melee", 1 ],
     "time": "2 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 1 ], [ "clasps", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -117,7 +112,6 @@
     "difficulty": 6,
     "skills_required": [ "melee", 1 ],
     "time": "4 h",
-    "autolearn": true,
     "reversible": { "time": "40 m" },
     "using": [ [ "tailoring_wyvern_leather", 4 ], [ "adhesive", 1 ], [ "clasps", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
@@ -139,7 +133,6 @@
     "difficulty": 6,
     "skills_required": [ "melee", 1 ],
     "time": "6 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 3 ], [ "clasps", 1 ], [ "adhesive", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -161,7 +154,6 @@
     "skills_required": [ "melee", 1 ],
     "time": "4 h",
     "reversible": { "time": "25 m" },
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -181,7 +173,6 @@
     "difficulty": 4,
     "skills_required": [ "melee", 1 ],
     "time": "45 m",
-    "autolearn": true,
     "reversible": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ] ],
     "proficiencies": [

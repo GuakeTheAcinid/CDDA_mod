@@ -9,7 +9,6 @@
     "difficulty": 3,
     "skills_required": [ "gun", 1 ],
     "time": "11 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ], [ "clasps", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -28,7 +27,6 @@
     "difficulty": 3,
     "skills_required": [ "pistol", 1 ],
     "time": "24 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 4 ], [ "fastener_small", 7 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -49,7 +47,6 @@
     "difficulty": 3,
     "skills_required": [ "pistol", 1 ],
     "time": "2 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ], [ "clasps", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -69,7 +66,6 @@
     "skills_required": [ "pistol", 1 ],
     "time": "8 h",
     "reversible": { "time": "1 h" },
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -84,6 +80,7 @@
     "type": "recipe",
     "copy-from": "holster",
     "time": "11 h",
+    "autolearn": false,
     "using": [ [ "tailoring_wyvern_leather", 2 ] ],
     "components": [ [ [ "strap_small", 1, "LIST" ] ], [ [ "clasps", 1, "LIST" ] ], [ [ "fastener_small", 2, "LIST" ] ] ],
     "proficiencies": [
@@ -103,7 +100,6 @@
     "difficulty": 3,
     "skills_required": [ "pistol", 1 ],
     "time": "8 h",
-    "autolearn": true,
     "qualities": [ { "id": "SEW", "level": 1 } ],
     "using": [ [ "tailoring_wyvern_leather", 1 ] ],
     "proficiencies": [
@@ -124,7 +120,6 @@
     "difficulty": 3,
     "skills_required": [ "pistol", 1 ],
     "time": "8 h",
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 2 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },
@@ -145,7 +140,6 @@
     "skills_required": [ "pistol", 1 ],
     "time": "1 m",
     "reversible": { "time": "30 s" },
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 1 ] ],
     "components": [ [ [ "holster", 2 ] ] ],
     "proficiencies": [
@@ -166,7 +160,6 @@
     "skills_required": [ "pistol", 1 ],
     "time": "1 m",
     "reversible": { "time": "30 s" },
-    "autolearn": true,
     "using": [ [ "tailoring_wyvern_leather", 1 ] ],
     "components": [ [ [ "holster", 2 ] ] ],
     "proficiencies": [
@@ -186,7 +179,6 @@
     "difficulty": 5,
     "skills_required": [ "gun", 1 ],
     "time": "11 h",
-    "autolearn": true,
     "using": [ [ "strap_small", 1 ], [ "tailoring_wyvern_leather", 3 ], [ "clasps", 1 ] ],
     "proficiencies": [
       { "proficiency": "prof_closures" },

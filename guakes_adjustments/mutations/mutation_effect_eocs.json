@@ -178,7 +178,7 @@
     {
       "type": "effect_on_condition",
       "id": "EOC_chem_gland_flame_recharge_timer",
-      "//": "will regenerate flame for flame glands to spray ~3 charges per 2 days",
+      "//": "will remove excessive mutagen_wyvern regeneration",
       "recurrence": 665,
       "condition": {
         "and": [
@@ -198,7 +198,8 @@
           {
             "or": [
               { "compare_string": [ "wyvern_skull", { "context_val": "itype" } ] },
-              { "compare_string": [ "wyvern_skull_chiseled", { "context_val": "itype" } ] }
+              { "compare_string": [ "wyvern_skull_chiseled", { "context_val": "itype" } ] },
+              { "compare_string": [ "wyvern_skull_helmet", { "context_val": "itype" } ] }
             ]
           },
           { "u_has_trait": "THRESH_WYVERN" }
@@ -208,19 +209,69 @@
     },
     {
       "type": "effect_on_condition",
-      "id": "EOC_wear_wyvern_helmet",
+      "id": "EOC_wyvern_learn_recipes",
       "eoc_type": "EVENT",
-      "required_event": "character_wears_item",
+      "required_event": "character_butchered_corpse",
       "condition": {
         "and": [
+          { "compare_string": [ "mon_ga_mutant_wyvern", { "context_val": "monster_id" } ] },
           {
             "or": [
-              { "compare_string": [ "wyvern_skull_helmet", { "context_val": "itype" } ] }
+              { "compare_string": [ "ACT_SKIN", { "context_val": "butcher_type" } ] },
+              { "compare_string": [ "ACT_BUTCHER", { "context_val": "butcher_type" } ] },
+              { "compare_string": [ "ACT_BUTCHER_FULL", { "context_val": "butcher_type" } ] },
+              { "compare_string": [ "ACT_DISSECT", { "context_val": "butcher_type" } ] }
             ]
-          },
-          { "u_has_trait": "THRESH_WYVERN" }
+          }
         ]
       },
-      "effect": [ { "message": "The helmet is quite too familar…" } ]
+      "effect": [
+        { "u_learn_recipe": "cured_wyvern_hide" },
+        { "u_learn_recipe": "tanning_wyvern_hide" },
+        { "u_learn_recipe": "wyvern_spear" },
+        { "u_learn_recipe": "wyvern_skull_chiseled" },
+        { "u_learn_recipe": "wyvern_skull_helmet" },
+        { "u_learn_recipe": "wyvern_skull_helmet_advanced" },
+        { "u_learn_recipe": "poncho_wyvern" },
+        { "u_learn_recipe": "poncho_wyvern_padded" },
+        { "u_learn_recipe": "trenchcoat_wyvern" },
+        { "u_learn_recipe": "pants_wyvern" },
+        { "u_learn_recipe": "hood_wyvern" },
+        { "u_learn_recipe": "xs_hood_wyvern" },
+        { "u_learn_recipe": "xl_hood_wyvern" },
+        { "u_learn_recipe": "wyvern_back_holster" },
+        { "u_learn_recipe": "wyvern_baldric_holster" },
+        { "u_learn_recipe": "wyvern_bootstrap" },
+        { "u_learn_recipe": "wyvern_holster" },
+        { "u_learn_recipe": "wyvern_western_holster" },
+        { "u_learn_recipe": "wyvern_sholster" },
+        { "u_learn_recipe": "wyvern_shoulder_holster" },
+        { "u_learn_recipe": "wyvern_side_double_holster" },
+        { "u_learn_recipe": "wyvern_FB_double_holster" },
+        { "u_learn_recipe": "wyvern_XL_holster" },
+        { "u_learn_recipe": "wyvern_XS_holster" },
+        { "u_learn_recipe": "wyvern_axe_ring" },
+        { "u_learn_recipe": "wyvern_baldric" },
+        { "u_learn_recipe": "wyvern_leg_sheath6" },
+        { "u_learn_recipe": "wyvern_gartersheath1" },
+        { "u_learn_recipe": "wyvern_gartersheath2" },
+        { "u_learn_recipe": "wyvern_bootsheath" },
+        { "u_learn_recipe": "wyvern_bscabbard" },
+        { "u_learn_recipe": "wyvern_scabbard" },
+        { "u_learn_recipe": "wyvern_sheath" },
+        { "u_learn_recipe": "wyvern_spearsling" },
+        { "u_learn_recipe": "wyvern_belt_notools" },
+        { "u_learn_recipe": "wyvern_duffel_bag" },
+        { "u_learn_recipe": "wyvern_pack" },
+        { "u_learn_recipe": "wyvern_rucksack" },
+        { "u_learn_recipe": "wyvern_runner_pack" },
+        { "u_learn_recipe": "wyvern_rig" },
+        { "u_learn_recipe": "wyvern_legrig" },
+        { "u_learn_recipe": "wyvern_leg_bag" },
+        { "u_learn_recipe": "wyvern_leg_small_bag" },
+        { "u_learn_recipe": "wyvern_armrig" },
+        { "u_learn_recipe": "wyvern_ankle_wallet_pouch" },
+        { "u_learn_recipe": "wyvern_pouch" }
+      ]
     }
 ]

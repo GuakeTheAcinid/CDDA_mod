@@ -9,7 +9,6 @@
     "skills_required": [ "chemistry", 2 ],
     "difficulty": 3,
     "time": "7 m",
-    "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "CUT_FINE", "level": 1 } ],
     "components": [
       [ [ "salt_water", 1 ], [ "saline", 2 ], [ "salt", 2 ] ],
@@ -27,7 +26,6 @@
     "difficulty": 5,
     "time": "1 h",
     "batch_time_factors": [ 20, 10 ],
-    "autolearn": true,
     "qualities": [
       { "id": "CUT", "level": 2 },
       { "id": "CUT_FINE", "level": 1},
@@ -56,11 +54,6 @@
     "difficulty": 6,
     "time": "30 m",
     "batch_time_factors": [ 50, 5 ],
-    "book_learn": [
-      [ "textbook_survival", 6 ],
-      [ "textbook_chemistry", 4 ],
-      [ "modern_tanner", 4 ]
-    ],
     "//": "Unlike recipes above, this one actually requires handling of dangerous chemical substances (lye powder).",
     "proficiencies": [ { "proficiency": "prof_intro_chemistry" } ],
     "qualities": [
