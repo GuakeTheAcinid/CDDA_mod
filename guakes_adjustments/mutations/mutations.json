@@ -153,21 +153,21 @@
       "copy-from": "RESISTWARM", "extend": { "category": [ "WYVERN" ]}
     },
     {
-      "type": "mutation", "id": "STYLISH",
-      "copy-from": "STYLISH",
-      "extend":
-      {
-        "vitamin_cost": 60,
-        "category": [ "WYVERN" ]
-      }
-    },
-    {
       "type": "mutation", "id": "STRONGER_RESISTWARM",
       "copy-from": "STRONGER_RESISTWARM",
       "extend": {
         "category": [ "WYVERN" ],
         "changes_to": [ "AFFINITYWARM" ],
         "threshreq": [ "THRESH_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "STYLISH",
+      "copy-from": "STYLISH",
+      "extend":
+      {
+        "vitamin_cost": 60,
+        "category": [ "WYVERN" ]
       }
     },
     {
