@@ -17,7 +17,6 @@
     {
       "type": "effect_on_conditions",
       "menu_text": "Hide lenses",
-      "msg": "You hide your shield lenses.",
       "effect_on_conditions": [
         "EOC_swap_eye_shield_bionics"
       ]
@@ -68,7 +67,6 @@
     {
       "type": "effect_on_conditions",
       "menu_text": "Reveal lenses",
-      "msg": "You reveal your shield lenses.",
       "effect_on_conditions": [
         "EOC_swap_eye_shield_bionics"
       ]
