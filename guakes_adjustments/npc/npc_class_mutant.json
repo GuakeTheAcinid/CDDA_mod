@@ -1,0 +1,21 @@
+[
+  {
+    "type": "npc_class",
+    "id": "NC_NPC_MUTANT_WYVERN",
+    "name": "Wyvern Mutant",
+    "job_description": "I'm looking for wyvern mutagen… this world is no place for humans anymore, and I don't plan to keep being one.",
+    "skills": [
+      { "skill": "dodge", "bonus": { "rng": [ 3, 8 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 10 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 3, 6 ] } }
+    ],
+    "bonus_str": 2,
+    "bonus_dex": 4,
+    "traits": [
+      { "group": "trait_mutant_npc_common_copy" },
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "group": "trait_group_wyvern" },
+      { "distribution": [ { "group": "trait_group_wyvern_nonthres" }, { "group": "trait_group_wyvern_postthres" } ] }
+    ]
+  }
+]
