@@ -23,5 +23,19 @@
     "price_postapoc": "35 USD",
     "weight": "500 g",
     "difficulty": 3
+  },
+  {
+    "id": "bio_trickle",
+    "copy-from": "bionic_general_npc_usable",
+    "//": "Fuck you, I return this back. Пидрила",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Trickle Charger CBM" },
+    "weight": "500 g",
+    "volume": "2500 ml",
+    "price_postapoc": 1500,
+    "melee_damage": { "bash": 8 },
+    "description": "A low-power, long-lasting bioelectric charger powered by small-scale nuclear decay.  Energy output is low but requires no fuel source, and multiple copies can be installed.",
+    "price": 120000,
+    "difficulty": 3
   }
 ]

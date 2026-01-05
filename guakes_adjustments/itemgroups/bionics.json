@@ -5,7 +5,8 @@
       "copy-from": "bionics",
       "extend": {
         "items": [
-            [ "bio_eyes_shield", 10 ]
+            [ "bio_eyes_shield", 10 ],
+            [ "bio_trickle", 10 ]
         ]
       }
     },
