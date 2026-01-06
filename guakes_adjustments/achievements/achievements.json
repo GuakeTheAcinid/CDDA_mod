@@ -1,0 +1,16 @@
+[
+  {
+    "id": "achievement_mutation_threshold_tyrant",
+    "type": "achievement",
+    "name": "Golden cuirass",
+    "requirements": [
+      {
+        "event_statistic": "avatar_last_crosses_mutation_threshold",
+        "is": "==",
+        "target": [ "mutation_category_id", "WYVERN" ],
+        "description": "crossed wyvern mutation threshold",
+        "visible": "when_achievement_completed"
+      }
+    ]
+  }
+]
