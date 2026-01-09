@@ -321,7 +321,7 @@
       "//": "Wyvern mutagen consumed to produce flammable liquid (and many other vitamins)",
       "vitamin_rates": [ [ "iron", 7200 ], [ "vitC", 2400 ], [ "mutagen_wyvern", -665 ]  ],
       "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": 0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 } ] } ],
-      "description": "Your face and jaws have grown into a long sleek scaly muzzle with the stop at the level of the brow line and all of the front teeth to be fangs now.  Your cheeks now have a pair of glands like one of a snake, but ain't that much exposed.  You can spit it's highly flammable contents on a wide area to ignite it, with the cost of this liquid is difficult and slow to produce.",
+      "description": "Your face and jaws have grown into a long sleek scaly muzzle with the stop at the level of the brow line and all of the front teeth to be fangs now.  Your cheeks now have a pair of glands like one of a snake, but ain't that much exposed.  You can spit it's highly flammable contents on a wide area to ignite it, with the cost of this liquid is difficult and slow to produce.  Consuming extra dose of primer seems to speed the process up.",
       "types": [ "MUZZLE" ],
       "prereqs": [ "SNOUT" ],
       "category": [ "WYVERN" ],
