@@ -90,28 +90,88 @@
     },
     {
       "type": "effect_on_condition",
+      "id": "EOC_mut_try_spit",
+      "condition": { "math": [ "u_effect_intensity('chem_gland_chem')", ">", "1"] },
+      "effect": [
+        {
+          "run_eoc_selector": [ "EOC_mut_spit_flame", "EOC_mut_distant_spit_flame" ],
+          "names": [ "Spit Flame", "Distant Spit Flame" ],
+          "title": "Select the spit type:",
+          "keys": [ "1", "2" ],
+          "descriptions": [
+            "Spit flammable liquid stored in your glands onto the nearby ground.",
+            "Spit flammable liquid in form of a thick glob, allowing to ignite it on distance."
+          ]
+        }
+      ],
+      "false_effect": { "u_message": "You try to spit, but your cheeks are empty!" }
+    },
+    {
+      "type": "effect_on_condition",
       "id": "EOC_mut_spit_flame",
       "condition": { "math": [ "u_effect_intensity('chem_gland_chem')", ">", "1" ] },
       "effect": [
-        { "u_cast_spell": { "id":"FIRE_SPIT" }, "targeted": true }
+        { "u_cast_spell": { "id": "FIRE_SPIT" }, "targeted": true }
       ],
       "false_effect": { "u_message": "You try to spit, but your cheeks are empty!" }
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_mut_distant_spit_flame",
+      "condition":
+      {
+        "and":
+        [
+          { "math": [ "u_effect_intensity('chem_gland_chem')", ">", "1" ] },
+          { "math": [ "u_vitamin('gold')", ">", "35" ] }
+        ]
+      },
+      "effect": [
+        { "u_cast_spell": { "id": "FIRE_SPIT_DISTANT" }, "targeted": true }
+      ],
+      "false_effect": 
+        [
+          {
+            "if": { "math": [ "u_vitamin('gold')", "<", "35" ] },
+            "then": { "u_message": "The spit is too fluid to spit on distance.", "type": "bad" },
+            "else": { "u_message": "You try to charge your spit, but your cheeks are empty!", "type": "bad" }
+          }
+        ]
     },
     {
       "type": "effect_on_condition",
       "id": "EOC_consume_wyvern_fire_spit",
       "eoc_type": "EVENT",
       "required_event": "character_casts_spell",
-      "condition": { "compare_string": [ "FIRE_SPIT", { "context_val": "spell" } ] },
-      "effect":
-      [
-        { "u_message": "You spit the flame!", "type": "good" },
-        {
-          "u_add_effect": "chem_gland_chem",
-          "duration": "PERMANENT",
-          "intensity": { "math": [ "u_effect_intensity('chem_gland_chem') - 1" ] }
+      "condition": {
+        "or": [
+          { "compare_string": [ "FIRE_SPIT", { "context_val": "spell" } ] },
+          { "compare_string": [ "FIRE_SPIT_DISTANT", { "context_val": "spell" } ] }
+        ]
+      },
+      "effect": {
+        "if": { "compare_string": [ "FIRE_SPIT", { "context_val": "spell" } ] },
+        "then": [
+          { "u_message": "You spit the flame!", "type": "good" },
+          {
+            "u_add_effect": "chem_gland_chem",
+            "duration": "PERMANENT",
+            "intensity": { "math": [ "u_effect_intensity('chem_gland_chem') - 1" ] }
+          }
+        ],
+        "else": {
+          "if": { "compare_string": [ "FIRE_SPIT_DISTANT", { "context_val": "spell" } ] },
+          "then": [
+            { "u_message": "You spit the glob of flame on distance!", "type": "good" },
+            { "math": [ "u_vitamin('gold')", "-=", "35" ] },
+            {
+              "u_add_effect": "chem_gland_chem",
+              "duration": "PERMANENT",
+              "intensity": { "math": [ "u_effect_intensity('chem_gland_chem') - 1" ] }
+            }
+          ]
         }
-      ]
+      }
     },
     {
       "type": "effect_on_condition",

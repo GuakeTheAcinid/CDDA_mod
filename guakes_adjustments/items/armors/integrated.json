@@ -556,5 +556,56 @@
         "holster": true
       }
     ]
+  },
+  {
+    "id": "integrated_wyvern_muzzle",
+    "type": "ARMOR",
+    "category": "tool",
+    "name": { "str_sp": "wyvern muzzle" },
+    "description": "Your long glittering muzzle. You can spit a spark to ignite something flammable and the fangs are sharp enought to grind a bit of soft metal.",
+    "//": "lenght: 12 cm? widgh: ~6-12cm? heigh: ~6-14cm",
+    "//2": "so 12x9x10 = 1080cm^3",
+    "//3": "mostly bone but bruh im tired",
+    "weight": "1403 g",
+    "volume": "1080 ml",
+    "longest_side": "12 cm",
+    "material": [ "flesh", "blood", "mut_bone", "mut_scales_fireproof" ],
+    "symbol": "x",
+    "color": "light_red",
+    "flags": [
+      "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
+      "WATER_FRIENDLY",
+      "TRADER_AVOID",
+      "FIRESTARTER"
+    ],
+    "use_action": {
+      "type": "firestarter",
+      "moves": 50
+    },
+    "qualities": [ [ "SAW_M", 1 ] ]
+  },
+  {
+    "id": "integrated_wyvern_stomach",
+    "type": "ARMOR",
+    "category": "tool",
+    "name": { "str_sp": "twisted internals" },
+    "description": "Your whole internals feels off, but not much distracting.",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "longest_side": "0 cm",
+    "material": [ "flesh", "blood" ],
+    "symbol": "x",
+    "color": "light_red",
+    "flags": [
+      "INTEGRATED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "UNBREAKABLE",
+      "WATER_FRIENDLY",
+      "TRADER_AVOID",
+      "FIRESTARTER",
+      "ZERO_WEIGHT"
+    ]
   }
 ]

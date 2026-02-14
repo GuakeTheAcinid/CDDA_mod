@@ -9,5 +9,16 @@
     "max": 2500,
     "rate": "1 h",
     "disease_excess": [ [ 100, 500 ], [ 501, 2199 ], [ 2200, 2500 ] ]
+  },
+  {
+    "id": "gold",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Gold" },
+    "excess": "vit_gold",
+    "min": 0,
+    "max": 200,
+    "rate": "1 h",
+    "disease_excess": [ [ 100, 112 ], [ 113, 126 ], [ 127, 200 ] ]
   }
 ]

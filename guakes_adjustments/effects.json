@@ -52,6 +52,58 @@
   },
   {
     "type": "effect_type",
+    "id": "vit_gold",
+    "name": [ "Aurum enhancement", "Aurum excess", "Aurum overdose" ],
+    "desc": [
+      "You feel stimmed and much better.  A little more may be too much though.",
+      "You feel nauseus and overstimulated.",
+      "Fever and tremor, blurry vision and gallucinations, severe nausea.  Yet luxury feeling."
+    ],
+    "max_intensity": 3,
+    "removes_effects": [
+      "fungus",
+      "dermatik",
+      "common_cold",
+      "flu",
+      "pre_flu",
+      "pre_common_cold",
+      "foodpoison",
+      "winded",
+      "winded_leg_l",
+      "winded_leg_r",
+      "winded_arm_l",
+      "winded_arm_r"
+    ],
+    "base_mods": {
+      "speed_mod": [ 20 ],
+      "str_mod": [ 4 ],
+      "dex_mod": [ 2 ],
+      "int_mod": [ 1 ],
+      "per_mod": [ 2 ],
+      "stamina_min": [ 4 ],
+      "pain_min": [ 0 ],
+      "pain_chance": [ -305 ],
+      "hurt_tick": [ 30 ],
+      "vomit_chance": [ -125 ],
+      "vomit_tick": [ -125 ]
+    },
+    "scaling_mods": {
+      "speed_mod": [ -60 ],
+      "str_mod": [ 3 ],
+      "dex_mod": [ -2 ],
+      "int_mod": [ -3 ],
+      "per_mod": [ -3 ],
+      "stamina_min": [ -2 ],
+      "pain_min": [ 1 ],
+      "pain_chance": [ 300 ],
+      "vomit_chance": [ 100 ],
+      "vomit_tick": [ 120 ]
+    },
+    "rating": "bad",
+    "blood_analysis_description": "Pure Aurum Contamination"
+  },
+  {
+    "type": "effect_type",
     "id": "puncture",
     "name": [ "Puncture Wound" ],
     "desc": [ "Something is puncturing your skin." ],

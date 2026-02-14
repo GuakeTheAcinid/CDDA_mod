@@ -78,7 +78,11 @@
     },
     {
       "type": "mutation", "id": "PICKYEATER",
-      "copy-from": "PICKYEATER", "extend": { "category": [ "WYVERN" ] }
+      "copy-from": "PICKYEATER",
+      "extend": {
+        "category": [ "WYVERN" ],
+        "changes_to": [ "STOMACH_WYVERN" ]
+      }
     },
     {
       "type": "mutation", "id": "PYROMANIA",
@@ -106,6 +110,13 @@
       "extend": {
         "category": [ "WYVERN" ],
         "changes_to": [ "MUZZLE_WYVERN" ]
+      }
+    },
+    {
+      "type": "mutation", "id": "POISRESIST",
+      "copy-from": "POISRESIST", "extend": {
+        "category": [ "WYVERN" ],
+        "leads_to": [ "STOMACH_WYVERN" ]
       }
     },
     {
@@ -320,7 +331,7 @@
       "purifiable": false,
       "//": "Wyvern mutagen consumed to produce flammable liquid (and many other vitamins)",
       "vitamin_rates": [ [ "iron", 7200 ], [ "vitC", 2400 ], [ "mutagen_wyvern", -665 ]  ],
-      "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": 0.25 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 } ] } ],
+      "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": 0.15 } ] } ],
       "description": "Your face and jaws have grown into a long sleek scaly muzzle with the stop at the level of the brow line and all of the front teeth to be fangs now.  Your cheeks now have a pair of glands like one of a snake, but ain't that much exposed.  You can spit it's highly flammable contents on a wide area to ignite it, with the cost of this liquid is difficult and slow to produce.  Consuming extra dose of primer seems to speed the process up.",
       "types": [ "MUZZLE" ],
       "prereqs": [ "SNOUT" ],
@@ -339,7 +350,25 @@
       "cost": 8,
       "time": 80,
       "kcal": true,
-      "activated_eocs": [ "EOC_mut_spit_flame" ]
+      "activated_eocs": [ "EOC_mut_try_spit" ],
+      "integrated_armor":[ "integrated_wyvern_muzzle" ]
+    },
+    {
+      "type": "mutation",
+      "id": "STOMACH_WYVERN",
+      "name": { "str": "Auric digestion" },
+      "points": 4,
+      "vitamin_cost": 240,
+      "mixed_effect": true,
+      "purifiable": false,
+      "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": 0.1 }, { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 } ] } ],
+      "description": "Your digestive system has developed to digest gold.  Impressive, but it seems to mess up some of your inners.",
+      "types": [ "CONSTITUTION" ],
+      "prereqs": [ "PICKYEATER" ],
+      "prereqs2": [ "CARNIVORE" ],
+      "category": [ "WYVERN" ],
+      "threshreq": [ "THRESH_WYVERN" ],
+      "integrated_armor":[ "integrated_wyvern_stomach" ]
     },
     {
       "type": "mutation",

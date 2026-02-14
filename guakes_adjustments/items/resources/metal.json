@@ -1,0 +1,61 @@
+[
+    {
+        "id": "gold_comestible",
+        "type" : "COMESTIBLE",
+        "name": { 
+            "str": "grinded gold",
+            "str_pl": "pile of grinded gold"
+        },
+        "comestible_type" : "MED",
+        "description": "A small pile of grinded gold.",
+        "weight": "5 g",
+        "volume": "60 ml",
+        "price": 6403000,
+        "price_postapoc": 2000,
+        "material": [ "gold" ],
+        "color": "yellow",
+        "symbol": "x",
+        "category": "spare_parts",
+        "looks_like": "gold_small",
+        "healthy" : 0,
+        "stackable": true,
+        "spoils_in" : 0,
+        "stim" : 1,
+        "quench" : 0,
+        "//3": { "addiction_potential" : 2 },
+        "//": { "consumption_effect_on_conditions" : [ "EOC_1" ] },
+        "//2":{"addiction_type" : [ "gold", { "addiction": "gold", "potential": 2 } ]},
+        "monotony_penalty" : 0,
+        "calories" : 0,
+        "charges": 1,
+        "use_action": {
+            "type": "consume_drug",
+            "activation_message": "You consume grinded gold. Surprisingly tasty.",
+            "tools_needed": { "integrated_wyvern_stomach": -1 },
+            "vitamins": [ [ "gold", 5 ] ]
+        },
+        "fun" : 5
+    },
+    {
+        "id": "platinum_comestible",
+        "type": "COMESTIBLE",
+        "copy-from": "gold_comestible",
+        "name": { 
+            "str": "grinded platinum",
+            "str_pl": "pile of grinded platinum"
+        },
+        "volume": "55ml",
+        "price": 3181000,
+        "price_postapoc": 5000,
+        "material": [ "platinum" ],
+        "color": "light_gray",
+        "use_action": {
+            "type": "consume_drug",
+            "activation_message": "You consume grinded platinum.",
+            "tools_needed": { "integrated_wyvern_stomach": -1 },
+            "vitamins": [ [ "platinum", 5 ] ]
+        },
+        "stim" : 1,
+        "fun" : 5
+    }
+]
