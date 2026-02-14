@@ -25,6 +25,17 @@
         }
       }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_gold_overdose_trip",
+    "recurrence": [ "1 hours" ],
+      "condition": {
+        "math": [ "u_vitamin('gold')", ">", "127" ]
+      },
+      "effect": [
+        { "u_add_effect": "hallucination_attacks", "duration": "120 minutes" }
+      ]
   }
 ]
 
