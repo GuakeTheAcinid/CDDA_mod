@@ -29,7 +29,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_gold_overdose_trip",
-    "recurrence": [ "1 hours" ],
+    "recurrence": "60 minutes",
       "condition": {
         "math": [ "u_vitamin('gold')", ">", "127" ]
       },
