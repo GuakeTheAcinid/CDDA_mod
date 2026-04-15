@@ -8,6 +8,8 @@
     "mutation_conflicts": [ "COMPOUND_EYES", "CEPH_VISION", "CEPH_EYES", "EYEBULGE", "EYESTALKS1", "EYESTALKS2" ],
     "social_modifiers": { "intimidate": 2},
     "flags": [ "BIONIC_NPC_USABLE" ],
+    "act_cost": "1 J",
+    "activated_eocs": [ "EOC_swap_eye_shield_bionics" ],
     "passive_pseudo_items": [ "bio_eyes_shield_installed" ]
   },
   {
@@ -20,6 +22,8 @@
     "mutation_conflicts": [ "COMPOUND_EYES", "CEPH_VISION", "CEPH_EYES", "EYEBULGE", "EYESTALKS1", "EYESTALKS2" ],
     "social_modifiers": { "intimidate": 2},
     "flags": [ "BIONIC_NPC_USABLE" ],
+    "act_cost": "1 J",
+    "activated_eocs": [ "EOC_swap_eye_shield_bionics" ],
     "passive_pseudo_items": [ "bio_eyes_shield_installed_hidden" ]
   },
   {
