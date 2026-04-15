@@ -54,7 +54,22 @@
         "tiles": [
           { "id": "mon_ga_mutant_wyvern", "fg": 49, "bg": 48 },
           { "id": "overlay_female_wielded_wyvern_spear", "fg": 50 },
-          { "id": "overlay_male_wielded_wyvern_spear", "fg": 51 }
+          { "id": "overlay_male_wielded_wyvern_spear", "fg": 51 },
+          { "id":
+            [
+              "overlay_female_worn_bio_fins_installed",
+              "overlay_female_worn_bio_fins_float_installed"
+            ], "fg": 52 },
+          { "id":
+            [
+              "overlay_male_worn_bio_fins_installed",
+              "overlay_male_worn_bio_fins_float_installed"
+            ], "fg": 53 },
+          { "id":
+            [
+              "overlay_male_worn_bio_fins_installed_hidden",
+              "overlay_male_worn_bio_fins_float_installed_hidden"
+            ], "fg": 54 }
         ],
         "sprite_width": 64,
         "sprite_height": 64,
