@@ -85,6 +85,91 @@
     ]
   },
   {
+    "id": "bio_fins_installed",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "bionic diving gear" },
+    "description": "Fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently deflated.  You can move fins like your own limbs and swim much better.",
+    "weight": "60 g",
+    "volume": "20 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "to_hit": -2,
+    "material": [ "plastic", "lvl4ballisticglass" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "warmth": 0,
+    "material_thickness": 1.0,
+    "environmental_protection": 0,
+    "flags": [
+      "INTEGRATED",
+      "UNBREAKABLE",
+      "SOFT",
+      "FIN",
+      "WATER_FRIENDLY",
+      "IRRITANT_IMMUNE",
+      "ALLOWS_TALONS",
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ],
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Activate swim bladder",
+      "effect_on_conditions": [
+        "EOC_swap_bio_swim_bladder"
+      ]
+    }
+  },
+  {
+    "id": "bio_fins_float_installed",
+    "type": "ARMOR",
+    "copy-from": "bio_fins_installed",
+    "name": { "str_sp": "bionic diving gear (on)" },
+    "description": "Fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently inflated.  You can move fins like your own limbs and swim much better.",
+    "extend": { "flags": "FLOTATION"},
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Disactivate swim bladder",
+      "effect_on_conditions": [
+        "EOC_swap_bio_swim_bladder"
+      ]
+    }
+  },
+  {
+    "id": "bio_fins_installed_hidden",
+    "type": "ARMOR",
+    "copy-from": "bio_fins_installed",
+    "name": { "str_sp": "bionic diving gear (hidden)" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently deflated.  The fins are currently folden and hidden.",
+    "delete": { "flags": "FIN" },
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Activate swim bladder",
+      "effect_on_conditions": [
+        "EOC_swap_bio_swim_bladder_hidden"
+      ]
+    }
+  },
+  {
+    "id": "bio_fins_float_installed_hidden",
+    "type": "ARMOR",
+    "copy-from": "bio_fins_installed_hidden",
+    "name": { "str_sp": "bionic diving gear (on) (hidden)" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently inflated.  The fins are currently folden and hidden.",
+    "extend": { "flags": "FLOTATION"},
+    "use_action":
+    {
+      "type": "effect_on_conditions",
+      "menu_text": "Disactivate swim bladder",
+      "effect_on_conditions": [
+        "EOC_swap_bio_swim_bladder_hidden"
+      ]
+    }
+  },
+  {
     "id": "integrated_wyvern_scales",
     "type": "ARMOR",
     "category": "armor",

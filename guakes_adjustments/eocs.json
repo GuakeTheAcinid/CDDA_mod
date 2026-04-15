@@ -36,6 +36,114 @@
       "effect": [
         { "u_add_effect": "hallucination_attacks", "duration": "120 minutes" }
       ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_swap_bio_fins_bionics",
+    "eoc_type": "ACTIVATION",
+    "effect":
+    [
+      {
+        "if": { "u_has_bionics": "bio_fins" },
+        "then":
+        [
+          { "message": "You hide your fins." },
+          { "u_lose_bionic": "bio_fins" },
+          { "u_add_bionic": "bio_fins_hidden" }
+        ],
+        "else":
+        {
+          "if": { "u_has_bionics": "bio_fins_hidden" },
+          "then":
+          [
+            { "message": "You reveal your fins." },
+            { "u_lose_bionic": "bio_fins_hidden" },
+            { "u_add_bionic": "bio_fins" }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_swap_bio_fins_bionics_float",
+    "eoc_type": "ACTIVATION",
+    "effect":
+    [
+      {
+        "if": { "u_has_bionics": "bio_fins_float" },
+        "then":
+        [
+          { "message": "You hide your fins." },
+          { "u_lose_bionic": "bio_fins_float" },
+          { "u_add_bionic": "bio_fins_float_hidden" }
+        ],
+        "else":
+        {
+          "if": { "u_has_bionics": "bio_fins_float_hidden" },
+          "then":
+          [
+            { "message": "You reveal your fins." },
+            { "u_lose_bionic": "bio_fins_float_hidden" },
+            { "u_add_bionic": "bio_fins_float" }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_swap_bio_swim_bladder",
+    "eoc_type":"ACTIVATION",
+    "effect":
+    [
+      {
+        "if": { "u_has_bionics": "bio_fins" },
+        "then":
+        [
+          { "message": "The swim bladder inflates in you." },
+          { "u_lose_bionic": "bio_fins" },
+          { "u_add_bionic": "bio_fins_float" }
+        ],
+        "else":
+        {
+          "if": { "u_has_bionics": "bio_fins_float" },
+          "then":
+          [
+            { "message": "The swim bladder deflates in you." },
+            { "u_lose_bionic": "bio_fins_float" },
+            { "u_add_bionic": "bio_fins" }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_swap_bio_swim_bladder_hidden",
+    "eoc_type":"ACTIVATION",
+    "effect":
+    [
+      {
+        "if": { "u_has_bionics": "bio_fins_hidden" },
+        "then":
+        [
+          { "message": "The swim bladder inflates in you." },
+          { "u_lose_bionic": "bio_fins_hidden" },
+          { "u_add_bionic": "bio_fins_float_hidden" }
+        ],
+        "else":
+        {
+          "if": { "u_has_bionics": "bio_fins_float_hidden" },
+          "then":
+          [
+            { "message": "The swim bladder deflates in you." },
+            { "u_lose_bionic": "bio_fins_float_hidden" },
+            { "u_add_bionic": "bio_fins_hidden" }
+          ]
+        }
+      }
+    ]
   }
 ]
 

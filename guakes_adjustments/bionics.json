@@ -41,6 +41,83 @@
     ]
   },
   {
+    "id": "bio_fins",
+    "type": "bionic",
+    "name": { "str": "Diving gear" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently deflated.  You can move fins like your own limbs and swim much better.",
+    "occupied_bodyparts": [
+      [ "torso", 2 ],
+      [ "leg_l", 2 ],
+      [ "leg_r", 2 ],
+      [ "foot_l", 1 ],
+      [ "foot_r", 1 ],
+      [ "hand_l", 1 ],
+      [ "hand_r", 1 ]
+    ],
+    "flags": [ "BIONIC_NPC_USABLE" ],
+    "enchantments": [ { "values": [ { "value": "MOVECOST_SWIM_MOD", "multiply": -0.5 } ] } ],
+    "activated_eocs": [ "EOC_swap_bio_fins_bionics" ],
+    "act_cost": "10 J",
+    "passive_pseudo_items": [ "bio_fins_installed" ]
+  },
+  {
+    "id": "bio_fins_float",
+    "type": "bionic",
+    "name": { "str": "Diving gear" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently inflated.  You can move fins like your own limbs and swim much better.",
+    "occupied_bodyparts": [
+      [ "torso", 2 ],
+      [ "leg_l", 2 ],
+      [ "leg_r", 2 ],
+      [ "foot_l", 1 ],
+      [ "foot_r", 1 ],
+      [ "hand_l", 1 ],
+      [ "hand_r", 1 ]
+    ],
+    "flags": [ "BIONIC_NPC_USABLE" ],
+    "activated_eocs": [ "EOC_swap_bio_fins_bionics_float" ],
+    "act_cost": "10 J",
+    "passive_pseudo_items": [ "bio_fins_float_installed" ]
+  },
+  {
+    "id": "bio_fins_hidden",
+    "type": "bionic",
+    "name": { "str": "Diving gear (hidden)" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently deflated.  The fins are currently folden and hidden.",
+    "occupied_bodyparts": [
+      [ "torso", 2 ],
+      [ "leg_l", 2 ],
+      [ "leg_r", 2 ],
+      [ "foot_l", 1 ],
+      [ "foot_r", 1 ],
+      [ "hand_l", 1 ],
+      [ "hand_r", 1 ]
+    ],
+    "flags": [ "BIONIC_NPC_USABLE" ],
+    "activated_eocs": [ "EOC_swap_bio_fins_bionics" ],
+    "act_cost": "10 J",
+    "passive_pseudo_items": [ "bio_fins_installed_hidden" ]
+  },
+  {
+    "id": "bio_fins_float_hidden",
+    "type": "bionic",
+    "name": { "str": "Diving gear (hidden)" },
+    "description": "You have fins installed in your feet, waist, hands and back and a chambbered swimming bladder in your chest cavity, which is currently inflated.  The fins are currently folden and hidden.",
+    "occupied_bodyparts": [
+      [ "torso", 2 ],
+      [ "leg_l", 2 ],
+      [ "leg_r", 2 ],
+      [ "foot_l", 1 ],
+      [ "foot_r", 1 ],
+      [ "hand_l", 1 ],
+      [ "hand_r", 1 ]
+    ],
+    "flags": [ "BIONIC_NPC_USABLE" ],
+    "activated_eocs": [ "EOC_swap_bio_fins_bionics_float" ],
+    "act_cost": "10 J",
+    "passive_pseudo_items": [ "bio_fins_float_installed_hidden" ]
+  },
+  {
     "id": "bio_digestion",
     "type": "bionic",
     "name": { "str": "Expanded Digestive System" },
