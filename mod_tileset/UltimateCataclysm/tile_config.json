@@ -68,7 +68,9 @@
           { "id":
             [
               "overlay_male_worn_bio_fins_installed_hidden",
-              "overlay_male_worn_bio_fins_float_installed_hidden"
+              "overlay_male_worn_bio_fins_float_installed_hidden",
+              "overlay_female_worn_bio_fins_installed_hidden",
+              "overlay_female_worn_bio_fins_float_installed_hidden"
             ], "fg": 54 }
         ],
         "sprite_width": 64,
