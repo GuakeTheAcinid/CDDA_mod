@@ -1,0 +1,8 @@
+[
+    {
+        "id": "mon_feral_scientist_scalpel",
+        "type": "MONSTER",
+        "copy-from": "mon_feral_scientist_scalpel",
+        "dissect": "CBM_SCI_FERAL"
+    }
+]
