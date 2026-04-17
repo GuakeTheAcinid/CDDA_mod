@@ -4,14 +4,14 @@
       "id": "surgery",
       "copy-from": "surgery",
       "extend":
-      { "items": [ { "group": "autodoc_installation_programs", "prob": 20 } ] }
+      { "items": [ { "group": "GA_autodoc_installation_programs", "prob": 20 } ] }
     },
     {
       "type": "item_group",
       "id": "dissection",
       "copy-from": "dissection",
       "extend":
-      { "items": [ { "group": "autodoc_installation_programs", "prob": 20 } ] }
+      { "items": [ { "group": "GA_autodoc_installation_programs", "prob": 20 } ] }
     },
     {
       "type": "item_group",
