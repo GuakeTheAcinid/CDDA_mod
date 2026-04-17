@@ -23,6 +23,37 @@
     },
     {
       "type": "item_group",
+      "id": "bionic_group_faulty",
+      "subtype": "distribution",
+      "items":
+      [
+        [ "bio_dis_acid", 10],
+        [ "bio_nostril", 10],
+        [ "bio_shakes", 10],
+        [ "bio_pokedeye", 10],
+        [ "bio_deformity", 10],
+        [ "bio_dis_shock", 10],
+        [ "bio_drain", 10],
+        [ "bio_faulty_electromagnetic_leak", 10],
+        [ "bio_sleepy", 10],
+        [ "bio_glowy", 10],
+        [ "bio_itchy", 10],
+        [ "bio_leaky", 10],
+        [ "bio_spasm", 10],
+        [ "bio_noise", 10],
+        [ "bio_power_weakness", 10],
+        [ "bio_radleak", 10],
+        [ "bio_thumbs", 10],
+        [ "bio_sleep_shutdown", 10],
+        [ "bio_ankles", 10],
+        [ "bio_faulty_grossfood", 10],
+        [ "bio_trip", 10],
+        [ "bio_voice", 10],
+        [ "bio_stiff", 10]
+      ]
+    },
+    {
+      "type": "item_group",
       "id": "bionics_op",
       "subtype": "distribution",
       "//": "What the commandos get.",
@@ -33,6 +64,7 @@
         [ "bio_power_armor_interface_mkII", 5 ]
       ],
       "items": [
+        { "group": "bionic_group_faulty", "prob": 60 },
         [ "bio_power_storage_mkII", 10 ],
         [ "bio_batteries", 10 ],
         [ "bio_metabolics", 20 ],
@@ -99,6 +131,7 @@
         [ "bio_railgun", 10 ]
       ],
       "items": [
+        { "group": "bionic_group_faulty", "prob": 15 },
         [ "bio_blade", 10 ],
         [ "bio_chain_lightning", 10 ],
         [ "bio_claws", 10 ],
@@ -119,6 +152,7 @@
       "subtype": "distribution",
       "//": "Elite zombie bio-operator defense CBMs.",
       "items": [
+        { "group": "bionic_group_faulty", "prob": 15 },
         [ "bio_ads", 10 ],
         [ "bio_armor_arms", 10 ],
         [ "bio_armor_eyes", 10 ],
@@ -139,6 +173,7 @@
       "subtype": "distribution",
       "//": "Elite zombie bio-operator utility CBMs.",
       "items": [
+        { "group": "bionic_group_faulty", "prob": 15 },
         [ "bio_eye_enhancer", 10 ],
         [ "bio_dex_enhancer", 10 ],
         [ "bio_int_enhancer", 10 ],
@@ -159,6 +194,7 @@
       "subtype": "distribution",
       "//": "Bionics used by technicians.",
       "items": [
+        { "group": "bionic_group_faulty", "prob": 60 },
         [ "bio_torsionratchet", 20 ],
         [ "bio_fuel_cell_gasoline", 10 ],
         [ "bio_memory", 20 ],
