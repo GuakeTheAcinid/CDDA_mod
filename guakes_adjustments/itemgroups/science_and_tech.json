@@ -1,20 +1,6 @@
 [
     {
       "type": "item_group",
-      "id": "surgery",
-      "copy-from": "surgery",
-      "extend":
-      { "items": [ { "group": "GA_autodoc_installation_programs", "prob": 20 } ] }
-    },
-    {
-      "type": "item_group",
-      "id": "dissection",
-      "copy-from": "dissection",
-      "extend":
-      { "items": [ { "group": "GA_autodoc_installation_programs", "prob": 20 } ] }
-    },
-    {
-      "type": "item_group",
       "id": "chem_lab",
       "copy-from": "chem_lab",
       "extend": { "items": [ [ "recipe_wyvern", 1 ] ] }

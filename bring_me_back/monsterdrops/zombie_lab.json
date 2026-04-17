@@ -7,7 +7,7 @@
         "extend": {
             "entries": [
                 { "group": "bionics_common", "prob": 10 },
-                { "group": "GA_autodoc_installation_programs", "prob": 5 }
+                { "group": "GA_autodoc_installation_programs", "prob": 15 }
             ]
         }
     },
