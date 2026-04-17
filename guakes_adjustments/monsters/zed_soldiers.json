@@ -17,8 +17,7 @@
         "hp": 180,
         "melee_skill": 8,
         "dodge": 4,
-        "armor_bash": 15,
-        "armor_cut": 27,
+        "extend": { "armor": { "bash": 15, "cut": 27 } },
         "dissect": "CBM_OP2",
         "special_attacks": [ [ "BIO_OP_BIOJUTSU", 15 ] ]
     }
