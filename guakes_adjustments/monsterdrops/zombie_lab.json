@@ -6,7 +6,8 @@
         "subtype": "collection",
         "extend": {
             "entries": [
-                { "group": "bionics", "prob": 10 }
+                { "group": "bionics", "prob": 10 },
+                { "group": "autodoc_installation_programs", "prob": 5 }
             ]
         }
     },

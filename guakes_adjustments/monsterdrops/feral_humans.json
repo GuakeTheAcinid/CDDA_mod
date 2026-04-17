@@ -1,0 +1,16 @@
+[
+    {
+        "type": "item_group",
+        "subtype": "collection",
+        "id": "feral_scientists_death_drops_scalpel",
+        "copy-from": "feral_scientists_death_drops_scalpel",
+        "extend":
+        {
+            "entries":
+            [
+                { "group": "bionics", "prob": 10 },
+                { "group": "autodoc_installation_programs", "prob": 5 }
+            ]
+        }
+    }
+]
