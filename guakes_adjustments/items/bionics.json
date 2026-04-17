@@ -9,7 +9,8 @@
     "price": "5 kUSD 500 USD",
     "price_postapoc": "35 USD",
     "weight": "500 g",
-    "difficulty": 3
+    "difficulty": 3,
+    "installation_data": "GA_AID_bio_eyes_shield"
   },
   {
     "id": "bio_eyes_shield_hidden",
@@ -22,7 +23,8 @@
     "price": "5 kUSD 500 USD",
     "price_postapoc": "35 USD",
     "weight": "500 g",
-    "difficulty": 3
+    "difficulty": 3,
+    "installation_data": "GA_AID_bio_eyes_shield"
   },
   {
     "id": "bio_trickle",
@@ -49,7 +51,8 @@
     "price": "5 kUSD 500 USD",
     "price_postapoc": "35 USD",
     "weight": "500 g",
-    "difficulty": 5
+    "difficulty": 5,
+    "installation_data": "GA_AID_bio_fins"
   },
   {
     "id": "bio_fins_float",
@@ -67,7 +70,8 @@
     "price": "5 kUSD 500 USD",
     "price_postapoc": "35 USD",
     "weight": "500 g",
-    "difficulty": 5
+    "difficulty": 5,
+    "installation_data": "GA_AID_bio_fins"
   },
   {
     "id": "bio_fins_float_hidden",

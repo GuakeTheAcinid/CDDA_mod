@@ -25,7 +25,9 @@
             [ "GA_AID_bio_pitch_perfect", 10 ],
             [ "GA_AID_bio_ups", 10 ],
             [ "GA_AID_bio_weight", 10 ],
-            [ "GA_AID_bio_trickle", 10 ]
+            [ "GA_AID_bio_trickle", 10 ],
+            [ "GA_AID_bio_eyes_shield", 10 ],
+            [ "GA_AID_bio_fins", 10 ]
         ]
     }
 ]

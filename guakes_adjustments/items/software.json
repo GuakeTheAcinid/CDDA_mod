@@ -164,5 +164,19 @@
         "copy-from": "AID_abstract",
         "name": { "str_sp": "Throwing Assist CBM installation data" },
         "description": "Precise step-by-step instructions and other required data for installation of a Throwing Assist CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  An integrated security subroutine renders it unusable after a single installation."
+    },
+    {
+        "id": "GA_AID_bio_eyes_shield",
+        "type": "GENERIC",
+        "copy-from": "AID_abstract",
+        "name": { "str_sp": "Eye shield CBM installation data" },
+        "description": "Precise step-by-step instructions and other required data for installation of an Eye shield CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  An integrated security subroutine renders it unusable after a single installation."
+    },
+    {
+        "id": "GA_AID_bio_fins",
+        "type": "GENERIC",
+        "copy-from": "AID_abstract",
+        "name": { "str_sp": "Diving gear CBM installation data" },
+        "description": "Precise step-by-step instructions and other required data for installation of an Diving gear CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  An integrated security subroutine renders it unusable after a single installation."
     }
 ]
