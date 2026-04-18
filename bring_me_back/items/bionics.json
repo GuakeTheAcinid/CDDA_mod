@@ -22,6 +22,20 @@
     "installation_data": "GA_AID_bio_alarm"
   },
   {
+    "id": "bio_adrenaline",
+    "name": { "str": "Adrenaline Pump CBM" },
+    "copy-from": "bio_adrenaline",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_adrenaline"
+  },
+  {
+    "id": "bio_ads",
+    "name": { "str": "Active Defense System CBM" },
+    "copy-from": "bio_ads",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_ads"
+  },
+  {
     "id": "bio_armor_arms",
     "name": { "str": "Arms Alloy Plating CBM" },
     "copy-from": "bio_armor_arms",
@@ -29,11 +43,46 @@
     "installation_data": "GA_AID_bio_armor_arms"
   },
   {
+    "id": "bio_armor_eyes",
+    "name": { "str": "Protective Lenses CBM" },
+    "copy-from": "bio_armor_eyes",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_armor_eyes"
+  },
+  {
+    "id": "bio_armor_head",
+    "name": { "str": "Head Alloy Plating CBM" },
+    "copy-from": "bio_armor_head",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_armor_head"
+  },
+  {
     "id": "bio_armor_legs",
     "name": { "str": "Legs Alloy Plating CBM" },
     "copy-from": "bio_armor_legs",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_armor_legs"
+  },
+  {
+    "id": "bio_armor_torso",
+    "name": { "str": "Torso Alloy Plating CBM" },
+    "copy-from": "bio_armor_torso",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_armor_torso"
+  },
+  {
+    "id": "bio_blade",
+    "name": { "str": "Monomolecular Blade CBM" },
+    "copy-from": "bio_blade",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_blade"
+  },
+  {
+    "id": "bio_batteries",
+    "name": { "str": "Battery System CBM" },
+    "copy-from": "bio_batteries",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_batteries"
   },
   {
     "id": "bio_shotgun",
@@ -57,11 +106,151 @@
     "installation_data": "GA_AID_bio_blood_filter"
   },
   {
+    "id": "bio_cable",
+    "name": { "str": "Cable Charger System CBM" },
+    "copy-from": "bio_cable",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_cable"
+  },
+  {
+    "id": "bio_carbon",
+    "name": { "str": "Subdermal Carbon Filament CBM" },
+    "copy-from": "bio_carbon",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_carbon"
+  },
+  {
+    "id": "bio_chain_lightning",
+    "name": { "str": "Chain Lightning CBM" },
+    "copy-from": "bio_chain_lightning",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_chain_lightning"
+  },
+  {
+    "id": "bio_claws",
+    "name": { "str": "Bionic Claws CBM" },
+    "copy-from": "bio_claws",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_claws"
+  },
+  {
     "id": "bio_climate",
     "name": { "str": "Internal Climate Control CBM" },
     "copy-from": "bio_climate",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_climate"
+  },
+  {
+    "id": "bio_cloak",
+    "name": { "str": "Cloaking System CBM" },
+    "copy-from": "bio_cloak",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_cloak"
+  },
+  {
+    "id": "bio_cqb",
+    "name": { "str": "Close Quarters Battle CBM" },
+    "copy-from": "bio_cqb",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_cqb"
+  },
+  {
+    "id": "bio_dex_enhancer",
+    "name": { "str": "Wired Reflexes CBM" },
+    "copy-from": "bio_dex_enhancer",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_dex_enhancer"
+  },
+  {
+    "id": "bio_digestion",
+    "name": { "str": "Expanded Digestive System CBM" },
+    "copy-from": "bio_digestion",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_digestion"
+  },
+  {
+    "id": "bio_ears",
+    "name": { "str": "Enhanced Hearing CBM" },
+    "copy-from": "bio_ears",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_ears"
+  },
+  {
+    "id": "bio_emp",
+    "name": { "str": "Directional EMP CBM" },
+    "copy-from": "bio_emp",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_emp"
+  },
+  {
+    "id": "bio_emp_armgun",
+    "name": { "str": "EMP Projector CBM" },
+    "copy-from": "bio_emp_armgun",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_emp_armgun"
+  },
+  {
+    "id": "bio_ethanol",
+    "name": { "str": "Ethanol Burner CBM" },
+    "copy-from": "bio_ethanol",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_ethanol"
+  },
+  {
+    "id": "bio_evap",
+    "name": { "str": "Aero-Evaporator CBM" },
+    "copy-from": "bio_evap",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_evap"
+  },
+  {
+    "id": "bio_eye_enhancer",
+    "name": { "str": "Diamond Cornea CBM" },
+    "copy-from": "bio_eye_enhancer",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_eye_enhancer"
+  },
+  {
+    "id": "bio_eye_optic",
+    "name": { "str": "Telescopic Eyes CBM" },
+    "copy-from": "bio_eye_optic",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_eye_optic"
+  },
+  {
+    "id": "bio_face_mask",
+    "name": { "str": "Facial Distortion CBM" },
+    "copy-from": "bio_face_mask",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_face_mask"
+  },
+  {
+    "id": "bio_faraday",
+    "name": { "str": "Dielectric Capacitance System CBM" },
+    "copy-from": "bio_faraday",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_faraday"
+  },
+  {
+    "id": "bio_fingerhack",
+    "name": { "str": "Fingerhack CBM" },
+    "copy-from": "bio_fingerhack",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_fingerhack"
+  },
+  {
+    "id": "bio_fitnessband",
+    "name": { "str": "Calorie Tracker CBM" },
+    "copy-from": "bio_fitnessband",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_fitnessband"
+  },
+  {
+    "id": "bio_flashbang",
+    "name": { "str": "Flashbang Generator CBM" },
+    "copy-from": "bio_flashbang",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_flashbang"
   },
   {
     "id": "bio_flashlight",
@@ -85,11 +274,81 @@
     "installation_data": "GA_AID_bio_geiger"
   },
   {
+    "id": "bio_gills",
+    "name": { "str": "Respirator CBM" },
+    "copy-from": "bio_gills",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_gills"
+  },
+  {
+    "id": "bio_ground_sonar",
+    "name": { "str": "Terranian Sonar CBM" },
+    "copy-from": "bio_ground_sonar",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_ground_sonar"
+  },
+  {
+    "id": "bio_heat_absorb",
+    "name": { "str": "Heat Drain CBM" },
+    "copy-from": "bio_heat_absorb",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_heat_absorb"
+  },
+  {
     "id": "bio_heatsink",
     "name": { "str": "Thermal Dissipation CBM" },
     "copy-from": "bio_heatsink",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_heatsink"
+  },
+  {
+    "id": "bio_hydraulics",
+    "name": { "str": "Hydraulic Muscles CBM" },
+    "copy-from": "bio_hydraulics",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_hydraulics"
+  },
+  {
+    "id": "bio_infrared",
+    "name": { "str": "Infrared Vision CBM" },
+    "copy-from": "bio_infrared",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_infrared"
+  },
+  {
+    "id": "bio_int_enhancer",
+    "name": { "str": "Cerebral Booster CBM" },
+    "copy-from": "bio_int_enhancer",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_int_enhancer"
+  },
+  {
+    "id": "bio_laser",
+    "name": { "str": "Finger-Mounted Laser CBM" },
+    "copy-from": "bio_laser",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_laser"
+  },
+  {
+    "id": "bio_leukocyte",
+    "name": { "str": "Leukocyte Breeder System CBM" },
+    "copy-from": "bio_leukocyte",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_leukocyte"
+  },
+  {
+    "id": "bio_lighter",
+    "name": { "str": "Finger Lighter CBM" },
+    "copy-from": "bio_lighter",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_lighter"
+  },
+  {
+    "id": "bio_lockpick",
+    "name": { "str": "Fingerpick CBM" },
+    "copy-from": "bio_lockpick",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_lockpick"
   },
   {
     "id": "bio_magnet",
@@ -99,11 +358,67 @@
     "installation_data": "GA_AID_bio_magnet"
   },
   {
+    "id": "bio_membrane",
+    "name": { "str": "Nictating Membrane CBM" },
+    "copy-from": "bio_membrane",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_membrane"
+  },
+  {
+    "id": "bio_memory",
+    "name": { "str": "Enhanced Memory Banks CBM" },
+    "copy-from": "bio_memory",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_memory"
+  },
+  {
+    "id": "bio_metabolics",
+    "name": { "str": "Metabolic Interchange CBM" },
+    "copy-from": "bio_metabolics",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_metabolics"
+  },
+  {
     "id": "bio_meteorologist",
     "name": { "str": "Weather Reader CBM" },
     "copy-from": "bio_meteorologist",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_meteorologist"
+  },
+  {
+    "id": "bio_nanobots",
+    "name": { "str": "Repair Nanobots CBM" },
+    "copy-from": "bio_nanobots",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_nanobots"
+  },
+  {
+    "id": "bio_night",
+    "name": { "str": "Artificial Night Generator CBM" },
+    "copy-from": "bio_night",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_night"
+  },
+  {
+    "id": "bio_night_vision",
+    "name": { "str": "Implanted Night Vision CBM" },
+    "copy-from": "bio_night_vision",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_night_vision"
+  },
+  {
+    "id": "bio_ods",
+    "name": { "str": "Offensive Defense System CBM" },
+    "copy-from": "bio_ods",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_ods"
+  },
+  {
+    "id": "bio_painkiller",
+    "name": { "str": "Sensory Dulling CBM" },
+    "copy-from": "bio_painkiller",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_painkiller"
   },
   {
     "id": "bio_power_storage",
@@ -120,6 +435,160 @@
     "installation_data": "GA_AID_bio_power_storage_mkII"
   },
   {
+    "id": "bio_probability_travel",
+    "name": { "str": "Probability Travel CBM" },
+    "copy-from": "bio_probability_travel",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_probability_travel"
+  },
+  {
+    "id": "bio_purifier",
+    "name": { "str": "Air Filtration System CBM" },
+    "copy-from": "bio_purifier",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_purifier"
+  },
+  {
+    "id": "bio_radscrubber",
+    "name": { "str": "Radiation Scrubber System CBM" },
+    "copy-from": "bio_radscrubber",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_radscrubber"
+  },
+  {
+    "id": "bio_razors",
+    "name": { "str": "Fingertip Razors CBM" },
+    "copy-from": "bio_razors",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_razors"
+  },
+  {
+    "id": "bio_fuel_cell_gasoline",
+    "name": { "str": "Gasoline Fuel Cell CBM" },
+    "copy-from": "bio_fuel_cell_gasoline",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_fuel_cell_gasoline"
+  },
+  {
+    "id": "bio_recycler",
+    "name": { "str": "Recycler Unit CBM" },
+    "copy-from": "bio_recycler",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_recycler"
+  },
+  {
+    "id": "bio_remote",
+    "name": { "str": "Remote Controller CBM" },
+    "copy-from": "bio_remote",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_remote"
+  },
+  {
+    "id": "bio_resonator",
+    "name": { "str": "Sonic Resonator CBM" },
+    "copy-from": "bio_resonator",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_resonator"
+  },
+  {
+    "id": "bio_scent_mask",
+    "name": { "str": "Olfactory Mask CBM" },
+    "copy-from": "bio_scent_mask",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_scent_mask"
+  },
+  {
+    "id": "bio_shock",
+    "name": { "str": "Electroshock Unit CBM" },
+    "copy-from": "bio_shock",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_shock"
+  },
+  {
+    "id": "bio_shockwave",
+    "name": { "str": "Shockwave Generator CBM" },
+    "copy-from": "bio_shockwave",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_shockwave"
+  },
+  {
+    "id": "bio_speed",
+    "name": { "str": "Synaptic Accelerator CBM" },
+    "copy-from": "bio_speed",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_speed"
+  },
+  {
+    "id": "bio_str_enhancer",
+    "name": { "str": "Muscle Augmentation CBM" },
+    "copy-from": "bio_str_enhancer",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_str_enhancer"
+  },
+  {
+    "id": "bio_surgical_razor",
+    "name": { "str": "Autonomous Surgical Scalpels CBM" },
+    "copy-from": "bio_surgical_razor",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_surgical_razor"
+  },
+  {
+    "id": "bio_sunglasses",
+    "name": { "str": "Anti-Glare Compensators CBM" },
+    "copy-from": "bio_sunglasses",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_sunglasses"
+  },
+  {
+    "id": "bio_targeting",
+    "name": { "str": "Targeting System CBM" },
+    "copy-from": "bio_targeting",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_targeting"
+  },
+  {
+    "id": "bio_teleport",
+    "name": { "str": "Teleportation Unit CBM" },
+    "copy-from": "bio_teleport",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_teleport"
+  },
+  {
+    "id": "bio_time_freeze",
+    "name": { "str": "Time Dilation CBM" },
+    "copy-from": "bio_time_freeze",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_time_freeze"
+  },
+  {
+    "id": "bio_tools",
+    "name": { "str": "Integrated Multitool CBM" },
+    "copy-from": "bio_tools",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_tools"
+  },
+  {
+    "id": "bio_torsionratchet",
+    "name": { "str": "Joint Torsion Ratchet CBM" },
+    "copy-from": "bio_torsionratchet",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_torsionratchet"
+  },
+  {
+    "id": "bio_jointservo",
+    "name": { "str": "Joint Servo CBM" },
+    "copy-from": "bio_jointservo",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_jointservo"
+  },
+  {
+    "id": "bio_uncanny_dodge",
+    "name": { "str": "Uncanny Dodge CBM" },
+    "copy-from": "bio_uncanny_dodge",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_uncanny_dodge"
+  },
+  {
     "id": "bio_ups",
     "name": { "str": "Unified Power System CBM" },
     "copy-from": "bio_ups",
@@ -132,6 +601,13 @@
     "copy-from": "bio_watch",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_watch"
+  },
+  {
+    "id": "bio_water_extractor",
+    "name": { "str": "Water Extraction Unit CBM" },
+    "copy-from": "bio_water_extractor",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_water_extractor"
   },
   {
     "id": "bio_syringe",
@@ -148,11 +624,39 @@
     "installation_data": "GA_AID_bio_weight"
   },
   {
+    "id": "bio_taste_blocker",
+    "name": { "str": "Taste Modifier CBM" },
+    "copy-from": "bio_taste_blocker",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_taste_blocker"
+  },
+  {
     "id": "bio_soporific",
     "name": { "str": "Soporific Induction CBM" },
     "copy-from": "bio_soporific",
     "type": "BIONIC_ITEM",
     "installation_data": "GA_AID_bio_soporific"
+  },
+  {
+    "id": "bio_synaptic_regen",
+    "name": { "str": "Synaptic Regeneration System CBM" },
+    "copy-from": "bio_synaptic_regen",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_synaptic_regen"
+  },
+  {
+    "id": "bio_lampoil",
+    "name": { "str": "Oil Generator CBM" },
+    "copy-from": "bio_lampoil",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_lampoil"
+  },
+  {
+    "id": "bio_recoil",
+    "name": { "str": "Recoil Compensators CBM" },
+    "copy-from": "bio_recoil",
+    "type": "BIONIC_ITEM",
+    "installation_data": "GA_AID_bio_recoil"
   },
   {
     "id": "bio_pitch_perfect",
