@@ -98,7 +98,7 @@
       },
       {
         "file": "mod_tileset\\UltimateCataclysm\\normal.png",
-        "//": "range 73 to xx",
+        "//": "range 73 to 88",
         "tiles": [
           { "id": "wyvern_skull", "fg": 72 },
           { "id": "wyvern_skull_chiseled", "fg": 73 },
@@ -110,6 +110,14 @@
           { "id": "pants_wyvern", "fg": 79 },
           { "id": "poncho_wyvern", "fg": 80 },
           { "id": "poncho_wyvern_padded", "fg": 81 }
+        ]
+      },
+      {
+        "file": "mod_tileset\\UltimateCataclysm\\normal_bmb.png",
+        "//": "range 89 to 89",
+        "//2": "not mine. I have no idea why CBM sprites fucking delete on their own. Something with dumb inheritence, not my problem.",
+        "tiles": [
+          { "id": "bio_int_enhancer", "fg": 88 }
         ]
       }
     ]
